@@ -1,7 +1,10 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
+  <nav class="nav-bar">
+    <div class="socials"></div>
+    <router-link to="/">Home</router-link>
+    <!-- <router-link to="/"> <img src="./assets/logo.png"/> </router-link>  -->
     <router-link to="/about">About</router-link>
+
   </nav>
   <router-view/>
 </template>
@@ -15,7 +18,19 @@
   color: #2c3e50;
 }
 
-nav {
+.socials {
+  background: blue;
+  height: 50px;
+  width: 300px;
+  float: right;
+}
+
+.nav-bar {
+  background: red;
+  height: 50px;
+}
+
+/* nav {
   padding: 30px;
 }
 
@@ -26,5 +41,5 @@ nav a {
 
 nav a.router-link-exact-active {
   color: #42b983;
-}
+} */
 </style>
