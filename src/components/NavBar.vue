@@ -1,6 +1,10 @@
 <template>
   <nav class="navbar" :class="{'navbar--hidden': !showNavBar}">
     <div class="home-icon">
+
+      <div class="menu-btn">
+        <div class="menu-btn__burger"></div>
+      </div>
       <div class=inner-home-container-left>
           <router-link style="text-decoration: none" to="/"><h1 class="home-link">Arvid!</h1></router-link>
       </div>
@@ -17,40 +21,54 @@
     </div>
 
   </nav>
+  <SideNav v-if="menuOpen"/>
 </template>
 
 <script>
 import SocialButton from './SocialButton.vue'
 import ThemeButton from './ThemeButton.vue'
+import SideNav from  './SideNav.vue'
 
 export default {
   name: 'NavBar',
   components: {
     SocialButton,
-    ThemeButton
+    ThemeButton,
+    SideNav,
   },
   data () {
     return {
       showNavBar: true,
-      lastScrollPosition: 0
+      lastScrollPosition: 0,
+      menuBtn: document.querySelector('.menu-btn'),
+      menuOpen: false,
     }
   },
   methods: {
-    redirectLinkedIn () {
-      window.open('https://www.linkedin.com/in/arvid-bergman-th%C3%B6rn-1843701b8/', 'mywindow')
-    },
     onScroll () {
       const currentScrollPosition = window.pageYOffset || document.documentElement.scrollTop
       if (currentScrollPosition < 0) { return }
       if (Math.abs(currentScrollPosition - this.lastScrollPosition) < 100) { return }
       this.showNavBar = currentScrollPosition < this.lastScrollPosition
       this.lastScrollPosition = currentScrollPosition
-      console.log(this.lastScrollPosition)
+      this.menuOpen = false;
+      this.menuBtn.classList.remove('open');
     }
   },
   mounted () {
-    console.log('Mounted')
     window.addEventListener('scroll', this.onScroll)
+    this.menuBtn = document.querySelector('.menu-btn')
+    this.menuBtn.addEventListener('click', () => {
+      if(!this.menuOpen) {
+        this.menuBtn.classList.add('open');
+        console.log("Open")
+    this.menuOpen = true;
+  } else {
+    this.menuBtn.classList.remove('open');
+    console.log("Closed")
+    this.menuOpen = false;
+  }
+  })
   },
   beforeUnmount () {
     window.removeEventListener('scroll', this.onScroll)
@@ -67,14 +85,14 @@ export default {
   justify-content: center;
   align-items: center;
   transition: top 0.3s;
-  transition: 0.3s all ease-out;
+  transition: 0.3s ease-in-out;
 }
 
 .inner-home-container-left {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: 0.3s all ease-out;
+  transition: 0.3s ease-in-out;
 }
 
 .inner-home-container-right {
@@ -82,21 +100,22 @@ export default {
   margin-left: 40px;
   justify-content: center;
   align-items: center;
-  transition: 0.3s all ease-out;
+  transition: 0.3s ease-in-out;
 }
 
 .home-link {
+  margin-left: 40px;
   color: var(--text-primary-color);
+  transition: 0.3s ease-in-out;
 }
 
 .home-icon {
     background-color: var(--background-color-primary);
-    margin-left: 40px;
     height: 50px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    transition: 0.3s all ease-out;
+    transition: 0.3s ease-in-out;
 }
 
 .navbar {
@@ -112,7 +131,7 @@ export default {
   display: flex;
   justify-content: space-between;
   transform: translate3d(0, 0, 0);
-  transition: 0.3s all ease-out;
+  transition: 0.3s ease-in-out;
 }
 
 .navbar.navbar--hidden {
@@ -126,5 +145,54 @@ export default {
 
 .clickable-div {
   cursor: pointer;
+}
+
+.menu-btn {
+  margin-left: 40px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+  /* border: 3px solid #fff; */
+}
+.menu-btn__burger {
+  width: 30px;
+  height: 4px;
+  background: var(--text-primary-color);
+  border-radius: 1px;
+  transition: .3s ease-in-out;
+}
+
+.menu-btn__burger::before,
+.menu-btn__burger::after {
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 4px;
+  background: var(--text-primary-color);
+  border-radius: 5px;
+  transition: .3s ease-in-out;
+}
+.menu-btn__burger::before {
+  transform: translateY(-16px);
+}
+.menu-btn__burger::after {
+  transform: translateY(16px);
+}
+/* ANIMATION */
+.menu-btn.open .menu-btn__burger {
+  transform: translateX(-50px);
+  background: transparent;
+  box-shadow: none;
+}
+.menu-btn.open .menu-btn__burger::before {
+  transform: rotate(45deg) translate(35px, -35px);
+}
+.menu-btn.open .menu-btn__burger::after {
+  transform: rotate(-45deg) translate(35px, 35px);
 }
 </style>

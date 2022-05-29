@@ -15,21 +15,6 @@ export default {
 </script>
 
 <style>
-/* #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  background: var(--background-color-primary);
-  height: 500vh;
-  width: 100vw;
-  margin: 0;
-  max-width: 100%;
-  transition: 0.3s all ease-out;
-  overflow-x:hidden;
-} */
-
 body {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -37,8 +22,11 @@ body {
   background: var(--background-color-primary);
   height: 500vh;
   width: 100vw;
+    top: 0;
+  right:0;
+  left: 0;
   max-width: 100%;
   overflow-x:hidden;
-  transition: 0.3s all ease-out;
+  transition: 0.3s ease-in-out;
 }
 </style>

@@ -95,7 +95,7 @@ export default {
   height: calc(var(--element-size) * 0.35);
   position: relative;
   padding: calc(var(--element-size) * 0.1);
-  transition: background 1s ease;
+  transition: background 0.3s ease;
   justify-content: center;
   width: calc(var(--element-size) * 0.35);
   z-index: 1;
