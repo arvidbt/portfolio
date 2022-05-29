@@ -1,45 +1,44 @@
 <template>
-  <nav class="nav-bar">
-    <div class="socials"></div>
-    <router-link to="/">Home</router-link>
-    <!-- <router-link to="/"> <img src="./assets/logo.png"/> </router-link>  -->
-    <router-link to="/about">About</router-link>
-
-  </nav>
+  <NavBar/>
   <router-view/>
 </template>
 
+<script>
+import NavBar from './components/NavBar.vue'
+
+export default {
+  name: 'App',
+  components: {
+    NavBar
+  }
+}
+</script>
+
 <style>
-#app {
+/* #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-}
-
-.socials {
-  background: blue;
-  height: 50px;
-  width: 300px;
-  float: right;
-}
-
-.nav-bar {
-  background: red;
-  height: 50px;
-}
-
-/* nav {
-  padding: 30px;
-}
-
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-nav a.router-link-exact-active {
-  color: #42b983;
+  background: var(--background-color-primary);
+  height: 500vh;
+  width: 100vw;
+  margin: 0;
+  max-width: 100%;
+  transition: 0.3s all ease-out;
+  overflow-x:hidden;
 } */
+
+body {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: var(--background-color-primary);
+  height: 500vh;
+  width: 100vw;
+  max-width: 100%;
+  overflow-x:hidden;
+  transition: 0.3s all ease-out;
+}
 </style>
