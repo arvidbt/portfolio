@@ -48,7 +48,6 @@ export default {
   },
   methods: {
     getIconType() {
-        console.log(this.iconType)
         if(this.iconType === 'CV') {
             this.isCV = true
         }
@@ -79,6 +78,11 @@ export default {
 
 svg path {
     fill:var(--text-primary-color) !important;
+}
+
+.social-icon:hover {
+  height: 40px;
+  transition: 0.2s ease-in-out;
 }
 
 .social-icon {

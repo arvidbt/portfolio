@@ -61,11 +61,9 @@ export default {
     this.menuBtn.addEventListener('click', () => {
       if(!this.menuOpen) {
         this.menuBtn.classList.add('open');
-        console.log("Open")
     this.menuOpen = true;
   } else {
     this.menuBtn.classList.remove('open');
-    console.log("Closed")
     this.menuOpen = false;
   }
   })

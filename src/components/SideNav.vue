@@ -31,9 +31,19 @@ export default {
     transform:translateX(0);
   }
 }
+
 .sidenav {
-    margin-top: 60px;
-    position: fixed;
+  height: 100%;
+  margin-top: 50px;
+  width: 300px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: var(--background-color-primary);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
 }
 
 .sidenav a {
@@ -51,6 +61,7 @@ export default {
 /* When you mouse over the navigation links, change their color */
 .sidenav a:hover {
   color: var(--accent-color);
+  font-size: 30px;
 }
 
 /* Position and style the close button (top right corner) */
