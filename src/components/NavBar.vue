@@ -10,9 +10,9 @@
     </div>
     <!-- here social links be at yeeeboi -->
     <div class="socials">
-      <SocialButton link="https://www.linkedin.com/in/arvid-bergman-th%C3%B6rn-1843701b8/" icon="linkedin.svg"/>
-      <SocialButton link="https://github.com/arvidbt" icon="github.svg"/>
-      <SocialButton link="https://arvidbt.github.io/resume/" icon="cv.svg"/>
+      <SocialButton link="https://www.linkedin.com/in/arvid-bergman-th%C3%B6rn-1843701b8/" icon="linkedin.svg" iconType="LinkedIn"/>
+      <SocialButton link="https://github.com/arvidbt" icon="github.svg" iconType="GitHub"/>
+      <SocialButton link="https://arvidbt.github.io/resume/" icon="cv.svg" iconType="CV"/>
 
     </div>
 
