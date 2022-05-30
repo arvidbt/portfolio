@@ -1,48 +1,50 @@
 <template>
-    <div id="mySidenav" class="sidenav slide-right">
-  <a href="#"><h2>About me</h2></a>
-  <a href="#"><h2>My projects</h2></a>
-  <a href="#"><h2>Get in touch</h2></a>
-
-</div>
+  <div id="mySidenav" class="sidenav slide-right">
+    <a href="#"><h2>About me</h2></a>
+    <a href="#"><h2>My projects</h2></a>
+    <a href="#"><h2>Get in touch</h2></a>
+  </div>
 </template>
 
 <script>
 export default {
-    name: 'SideNav',
-}
+  name: "SideNav",
+};
 </script>
 
 <style scoped>
 .slide-right {
   width: 100%;
   overflow: hidden;
+
 }
 
 .slide-right h2 {
   animation: 0.5s slide-right 0s forwards;
-    transform:translateX(-100%);
+  transform: translateX(-100%);
+
 }
 
 @keyframes slide-right {
-    from {
-        margin-left: -500px;
-    } to {
-    transform:translateX(0);
+  from {
+    margin-left: -500px;
+  }
+  to {
+    transform: translateX(0);
   }
 }
 
 .sidenav {
   height: 100%;
-  margin-top: 50px;
+  margin-top: 70px;
   width: 300px;
   position: fixed;
+  transition: 0.3s ease-in-out;
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: var(--background-color-primary);
+  background: var(--background-color-primary);
   overflow-x: hidden;
-  transition: 0.5s;
   padding-top: 60px;
 }
 
@@ -52,10 +54,9 @@ export default {
   text-decoration: none;
   font-size: 25px;
   color: var(--text-primary-color);
+  transition: all .3s ease-in-out;
   display: block;
-  transition: 0.3s;
   width: fit-content;
-  transition: .3s;
 }
 
 /* When you mouse over the navigation links, change their color */
@@ -70,18 +71,21 @@ export default {
   right: 25px;
   font-size: 36px;
   margin-left: 50px;
-  transition: .3s ease-in-out;
 }
 
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 #main {
-  transition: margin-left .5s;
+  transition: margin-left 0.5s;
   padding: 20px;
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
 }
 </style>

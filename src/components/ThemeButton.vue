@@ -80,7 +80,24 @@ export default {
     color: white;
 }
 
-.toggle-button {
+.sun-span:hover {
+    color: orange;
+}
+
+.moon-span:hover {
+    color: gray;
+
+}
+
+.switch-label:hover {
+  height: calc(var(--element-size) * 0.55);
+  width: calc(var(--element-size) * 0.55);
+    transition: 0.2s all ease-in-out;
+
+}
+
+.switch-label:not(hover) {
+    transition: 0.2s all ease-in-out;
 
 }
 

@@ -82,7 +82,11 @@ svg path {
 
 .social-icon:hover {
   height: 40px;
-  transition: 0.2s ease-in-out;
+  transition: 0.2s all ease-in-out;
+}
+
+.social-icon:not(hover) {
+  transition: 0.2s all ease-in-out;
 }
 
 .social-icon {

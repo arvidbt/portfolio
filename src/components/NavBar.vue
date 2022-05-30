@@ -6,7 +6,7 @@
         <div class="menu-btn__burger"></div>
       </div>
       <div class=inner-home-container-left>
-          <router-link style="text-decoration: none" to="/"><h1 class="home-link">Arvid!</h1></router-link>
+          <!-- <router-link style="text-decoration: none" to="/"><h1 class="home-link">Arvid!</h1></router-link> -->
       </div>
       <div class="inner-home-container-right">
           <ThemeButton/>
@@ -17,7 +17,6 @@
       <SocialButton link="https://www.linkedin.com/in/arvid-bergman-th%C3%B6rn-1843701b8/" icon="linkedin.svg" iconType="LinkedIn"/>
       <SocialButton link="https://github.com/arvidbt" icon="github.svg" iconType="GitHub"/>
       <SocialButton link="https://arvidbt.github.io/resume/" icon="cv.svg" iconType="CV"/>
-
     </div>
 
   </nav>
@@ -123,7 +122,7 @@ export default {
   max-width: 100%;
   background-color: var(--background-color-primary);;
   position: fixed;
-  top: 0;
+  top: 20px;
   right:0;
   left: 0;
   display: flex;
@@ -152,7 +151,7 @@ export default {
   justify-content: center;
   align-items: center;
   width: 30px;
-  height: 30px;
+  height: 20px;
   cursor: pointer;
   transition: all .3s ease-in-out;
   /* border: 3px solid #fff; */
@@ -165,8 +164,18 @@ export default {
   transition: .3s ease-in-out;
 }
 
-.menu-btn__burger::before,
+.menu-btn__burger::before {
+  margin-bottom: 5px;
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 4px;
+  background: var(--text-primary-color);
+  border-radius: 5px;
+  transition: .3s ease-in-out;
+}
 .menu-btn__burger::after {
+  margin-bottom: 5px;
   content: '';
   position: absolute;
   width: 30px;
