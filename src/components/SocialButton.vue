@@ -75,5 +75,26 @@ export default {
 </script>
 
 <style scoped>
-  @import '../assets/styles/SocialButton.css'
+
+svg path {
+    fill:var(--text-primary-color) !important;
+}
+
+.social-icon:hover {
+  height: 40px;
+  transition: 0.2s all ease-in-out;
+}
+
+.social-icon:not(hover) {
+  transition: 0.2s all ease-in-out;
+}
+
+.social-icon {
+  margin-left: 40px;
+  height: 30px;
+}
+
+.clickable-div {
+  cursor: pointer;
+}
 </style>
