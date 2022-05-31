@@ -20,7 +20,7 @@
     </div>
 
   </nav>
-  <SideNav v-if="menuOpen"/>
+  <SideNav @clicked="onClicked" v-if="menuOpen"/>
 </template>
 
 <script>
@@ -30,6 +30,7 @@ import SideNav from './SideNav.vue'
 
 export default {
   name: 'NavBar',
+  emits: ["clicked", "showFab"],
   components: {
     SocialButton,
     ThemeButton,
@@ -44,14 +45,29 @@ export default {
     }
   },
   methods: {
+    onClicked(AboutMe) {
+      if(AboutMe === 'aboutMe') {
+        this.$emit('clicked', AboutMe)
+      } else if(AboutMe === 'mySkills') {
+        this.$emit('clicked', AboutMe)
+      } else if(AboutMe === 'myProjects') {
+        this.$emit('clicked', AboutMe)
+      } else if(AboutMe === 'getInTouch') {
+        this.$emit('clicked', AboutMe)
+      } else {
+        return
+      }
+    },
+
     onScroll () {
       const currentScrollPosition = window.pageYOffset || document.documentElement.scrollTop
       if (currentScrollPosition < 0) { return }
-      if (Math.abs(currentScrollPosition - this.lastScrollPosition) < 100) { return }
+      if (Math.abs(currentScrollPosition - this.lastScrollPosition) < 30) { return }
       this.showNavBar = currentScrollPosition < this.lastScrollPosition
       this.lastScrollPosition = currentScrollPosition
       this.menuOpen = false
       this.menuBtn.classList.remove('open')
+      this.$emit('showFab', this.showNavBar)
     }
   },
   mounted () {
@@ -77,7 +93,8 @@ export default {
 .socials {
     background-color: var(--background-color-primary);
     margin-right: 40px;
-    height: 50px;
+    margin-top: 20px;
+    height: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -108,7 +125,8 @@ export default {
 
   .home-icon {
       background-color: var(--background-color-primary);
-      height: 50px;
+      margin-top: 20px;
+      height: 40px;
       display: flex;
       justify-content: space-evenly;
       align-items: center;
@@ -117,12 +135,12 @@ export default {
 
   .navbar {
     margin: 0;
-    height: 50px;
+    height: 70px;
     width: 100vw;
     max-width: 100%;
     background-color: var(--background-color-primary);;
     position: fixed;
-    top: 20px;
+    top: 0px;
     right:0;
     left: 0;
     display: flex;

@@ -5,23 +5,24 @@
     </div>
     <div class="about-me-container content">
         <strong>
-            <h1>Hello!</h1>
-            <h1>Hello!</h1>
+
+
+
+
 
             <h2>
-                My name is Arvid <span style="color: var(--accent-color); transition: all 0.3s ease-in-out;">Bergman Thörn.</span>
-            </h2>
-
-            <h2>
-                I'm a CS-student currently heading towards a B.sc at Umeå University. Currently,
-                I'm in my second year. I don't only like to learn about programming, I like to teach is aswell. That's
+                I'm a Computer Science-student currently heading towards a B.sc at Umeå University. Currently,
+                I'm in my <span style="color: var(--accent-color); transition: all 0.3s ease-in-out;">3rd and final</span> year. I don't only like to learn about programming, I like to teach it aswell. That's
                 why I currently work as a teacher assistant alongside my studies, teaching various courses.
             </h2>
             <h2>
 
-                Those courses include Datastructures and Algorithms, Objective-Oriented Programming, Imperative Programming in C,
-                Application Development in Java.
+                Those courses include Datastructures and Algorithms, Objective-Oriented Programming 
+                <span style="color: var(--accent-color); transition: all 0.3s ease-in-out;">, Imperative Programming in C,
+                Application Development in Java.</span>
             </h2>
+
+            <h2>I pride myself in being a driven and intrested person. I like undertaking new things and dive into it!</h2>
 
             <h2>I also have some industry experience, where I've worked in frontend development.</h2>
         </strong>
@@ -32,17 +33,15 @@
 
 <script>
 export default {
-  name: 'LandingPage'
+  name: 'LandingPage',
 
 }
-
 </script>
 
 <style scoped>
 /* Google Fonts */
 @import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
 .container {
-    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -50,7 +49,6 @@ export default {
     top: 50px;
     width: 100vw;
     height: 100vh;
-
 }
 
 img {
@@ -96,9 +94,9 @@ img {
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap');
 h1 { color: var(--text-primary-color); font-family: 'Roboto', sans-serif;    font-size: 62px; font-weight: 800; line-height: 72px; margin: 0 0 24px; text-align: left; }
 
-h2 { color: var(--text-primary-color); font-family: 'Raleway',sans-serif; font-size: 24px; font-weight: 800; line-height: 36px; margin: 0 0 24px; text-align: lfet; }
+h2 { color: var(--text-primary-color); font-family: 'Roboto', sans-serif; font-size: 18px; font-weight: 800; line-height: 36px; margin: 0 0 24px; text-align: lfet; }
 
-p { color: var(--text-primary-color); font-family: 'Raleway',sans-serif; font-size: 18px; font-weight: 500; line-height: 32px; margin: 0 0 24px; }
+p { color: var(--text-primary-color); font-family: 'Roboto', sans-serif; font-size: 18px; font-weight: 500; line-height: 32px; margin: 0 0 24px; }
 
 a { color: var(--text-primary-color); text-decoration: underline; }
 

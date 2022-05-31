@@ -1,14 +1,24 @@
 <template>
   <div id="mySidenav" class="sidenav slide-right">
-    <a href="#"><h2>About me</h2></a>
-    <a href="#"><h2>My projects</h2></a>
-    <a href="#"><h2>Get in touch</h2></a>
+    <a @click="goto('aboutMe')"><h2>About me</h2></a>
+    <a @click="goto('mySkills')"><h2>My Skills</h2></a>
+    <a @click="goto('myProjects')"><h2>My projects</h2></a>
+    <a @click="goto('getInTouch')"><h2>Get in touch</h2></a>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'SideNav'
+  name: 'SideNav',
+  emits: ["clicked"],
+  components: {
+  },
+  methods: {
+    goto(value) {
+      console.log()
+      this.$emit('clicked', value)
+    }
+  }
 }
 </script>
 
@@ -57,6 +67,7 @@ export default {
     transition: all .3s ease-in-out;
     display: block;
     width: fit-content;
+    cursor: pointer;
   }
 
   /* When you mouse over the navigation links, change their color */
