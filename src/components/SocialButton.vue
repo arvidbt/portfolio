@@ -43,20 +43,20 @@ export default {
       linkToSite: this.link,
       isCV: false,
       isGitHub: false,
-      isLinkedIn: false,
+      isLinkedIn: false
     }
   },
   methods: {
-    getIconType() {
-        if(this.iconType === 'CV') {
-            this.isCV = true
-        }
-        if(this.iconType === 'GitHub') {
-            this.isGitHub = true
-        }
-        if(this.iconType === 'LinkedIn') {
-            this.isLinkedIn = true
-        }
+    getIconType () {
+      if (this.iconType === 'CV') {
+        this.isCV = true
+      }
+      if (this.iconType === 'GitHub') {
+        this.isGitHub = true
+      }
+      if (this.iconType === 'LinkedIn') {
+        this.isLinkedIn = true
+      }
     },
 
     redirect () {
@@ -68,34 +68,12 @@ export default {
     }
   },
 
-  mounted() {
-      this.getIconType()
+  mounted () {
+    this.getIconType()
   }
 }
 </script>
 
 <style scoped>
-
-svg path {
-    fill:var(--text-primary-color) !important;
-}
-
-.social-icon:hover {
-  height: 40px;
-  transition: 0.2s all ease-in-out;
-}
-
-.social-icon:not(hover) {
-  transition: 0.2s all ease-in-out;
-}
-
-.social-icon {
-  margin-left: 40px;
-  height: 30px;
-}
-
-.clickable-div {
-  cursor: pointer;
-}
-
+  @import '../assets/styles/SocialButton.css'
 </style>
