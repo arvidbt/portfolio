@@ -143,6 +143,7 @@ export default {
     top: 0px;
     right:0;
     left: 0;
+    z-index: 1000;
     display: flex;
     justify-content: space-between;
     transform: translate3d(0, 0, 0);

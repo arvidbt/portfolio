@@ -6,7 +6,7 @@
 
 <script>
 export default {
-    name: 'ExperiencesPage',
+    name: 'SkillsPage',
 }
 
 </script>
@@ -21,9 +21,6 @@ export default {
     top: 50px;
     width: 100vw;
     height: 100vh;
-}
 
-.skills {
-    /* React, JS, Java, HTML5, CSS3, NodeJS, MySQL, Python, C, MaterialUI, Figma */
 }
 </style>

@@ -5,11 +5,6 @@
     </div>
     <div class="about-me-container content">
         <strong>
-
-
-
-
-
             <h2>
                 I'm a Computer Science-student currently heading towards a B.sc at Umeå University. Currently,
                 I'm in my <span style="color: var(--accent-color); transition: all 0.3s ease-in-out;">3rd and final</span> year. I don't only like to learn about programming, I like to teach it aswell. That's
@@ -24,7 +19,7 @@
 
             <h2>I pride myself in being a driven and intrested person. I like undertaking new things and dive into it!</h2>
 
-            <h2>I also have some industry experience, where I've worked in frontend development.</h2>
+            <h2><span style="color: var(--accent-color); transition: all 0.3s ease-in-out;">I also have some industry experience, where I've worked in frontend development.</span></h2>
         </strong>
     </div>
 
@@ -66,14 +61,15 @@ img {
 
 .about-me-container {
     width: 40vw;
-    height: 60vh;
+    height: 50vh;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: left;
     border-radius: 15px;
-    background: var(--background-color-primary);
+    background: var(--background-color-secondary);
     transition: all 0.3s ease-in-out;
+
 
 }
 
@@ -92,11 +88,11 @@ img {
     color: var(--text-primary-color);
 } */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap');
-h1 { color: var(--text-primary-color); font-family: 'Roboto', sans-serif;    font-size: 62px; font-weight: 800; line-height: 72px; margin: 0 0 24px; text-align: left; }
+h1 { color: var(--text-primary-color); font-family: 'Roboto', sans-serif;    font-size: 62px; font-weight: 800; line-height: 72px;  text-align: left; }
 
-h2 { color: var(--text-primary-color); font-family: 'Roboto', sans-serif; font-size: 18px; font-weight: 800; line-height: 36px; margin: 0 0 24px; text-align: lfet; }
+h2 { margin-left: 20px; margin-right: 20px; color: var(--text-primary-color); font-family: 'Roboto', sans-serif; font-size: 18px; font-weight: 800; line-height: 36px; text-align: lfet; }
 
-p { color: var(--text-primary-color); font-family: 'Roboto', sans-serif; font-size: 18px; font-weight: 500; line-height: 32px; margin: 0 0 24px; }
+p { color: var(--text-primary-color); font-family: 'Roboto', sans-serif; font-size: 18px; font-weight: 500; line-height: 32px; }
 
 a { color: var(--text-primary-color); text-decoration: underline; }
 
@@ -130,7 +126,7 @@ a:hover { color: #1c1c1c; text-decoration: underline; }
     clip-path: polygon(
       0% 45%,
       16% 44%,
-      33% 50%,
+      33% 20%,
       54% 60%,
       70% 61%,
       84% 59%,
@@ -154,4 +150,5 @@ a:hover { color: #1c1c1c; text-decoration: underline; }
     );
   }
 }
+
 </style>
