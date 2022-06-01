@@ -24,7 +24,7 @@
             </div>
         </div>
         <div class="skills" @click="redirect('https://github.com/arvidbt/PBLogger')">
-            <img class="img-left" src="../assets/images/homescreen.png"/>
+            <img class="img-left" src="../assets/images/thirty.png"/>
             <div class="text-container">
                 <h1>PBLogger, an Android training app.</h1>
                 <h3>I made this application during the course Android Development, where the only requirement was to use a sensor on the phone.</h3>
@@ -53,7 +53,7 @@
         </div>
 
          <div class="skills" @click="redirect('https://github.com/arvidbt/2048')">
-            <img class="img-left" src="../assets/images/2048.png"/>
+            <img class="img-left" src="../assets/images/thirty.png"/>
             <div class="text-container">
                 <h1>2048 in Java.</h1>
                 <h3>One of my favorite mobile games of all times is 2048, a game where you combine equal numbered tiles to create one new, worth twice as much. </h3>
@@ -61,9 +61,6 @@
                 <h3>Arguably, the game is not very pretty - both UI and codewise - but this was my first big solo project.</h3>
                 <p>Tools used: Java, Swing, C</p>
             </div>
-        </div>
-        <div class="skills">
-            <h1 style="color: var(--text-primary-color">Some other fun links:</h1>
         </div>
     </div>
 </template>
@@ -83,7 +80,8 @@ export default {
 
 <style scoped>
 .container {
-    display: block;
+      display: grid;
+  grid-template-columns: auto auto;
     justify-content: center;
     align-items: center;
     background: transparent;
@@ -96,26 +94,25 @@ export default {
 .skills{
     /* React, JS, Java, HTML5, CSS3, NodeJS, MySQL, Python, C, MaterialUI, Figma */
     display: flex;
-    min-width: 40vw;
+    min-width: 30vw;
     width: fit-content;
     height: 50vh;
     position: relative;
     background-color:  var(--background-color-secondary);
     color: var(--accent-color);
     border-radius: 30px;
-    margin-bottom: 15vh;
-    margin-top: 10vh;
-    margin-left: 30vw;
+    margin-bottom: 5vh;
+    margin-top: 5vh;
+    margin-left: 20px;
+    margin-right: 20px;
     opacity: 0.7;
 }
 
 .skills:hover {
     background-color: var(--accent-color);
     color: var(--text-primary-color);
-    width: fit-content;
-    height: 55vh;
     cursor: pointer;
-    transition: 0.2s all ease-in-out;
+    transition: 0.3s all ease-in-out;
     opacity: 1;
 }
 
@@ -153,11 +150,12 @@ p {
 .img-left {
     border-radius: 20px;
     margin-right: 100px;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
-.img-right {
-    margin-left: 100px;
-}
+
 
 .social-icon:hover {
   height: 40px;
