@@ -1,5 +1,5 @@
 <template>
-    <div class="container">
+    <div class="contactpage-container">
         <div class="contact-container">
             <h1>Let's make something happen!</h1>
         </div>
@@ -16,7 +16,7 @@ export default {
 
 
 <style scoped>
-.container {
+.contactpage-container {
     display: flex;
     justify-content: center;
     align-items: center;

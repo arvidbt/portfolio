@@ -1,5 +1,5 @@
 <template>
-    <div class=container>
+    <div class=project-container>
         <!-- This websites project slot -->
         <div class="skills" @click="redirect('https://github.com/arvidbt/portfolio')">
             <img class="img-left" src="../assets/images/thirty.png"/>
@@ -78,7 +78,7 @@ export default {
 
 
 <style scoped>
-.container {
+.project-container {
       display: grid;
   grid-template-columns: auto auto;
     justify-content: center;

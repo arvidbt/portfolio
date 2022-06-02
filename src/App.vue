@@ -7,12 +7,24 @@
     <section>
       <section><LandingPage id="aboutMe"/></section>
     </section>
+    <section>
+      <NavBar @clicked="onClicked" @showFab="show"/>
+    </section>
+    <section>
+      <ExperiencesPage id="mySkills"/>
+    </section>
+    <section>
+      <ProjectsPage id="myProjects"/>
+    </section>
+    <section>
+      <GetInTouch id="getInTouch"/>
+    </section>
 <!-- <section><LandingPage id="aboutMe"/></section> -->
 <!-- <NavBar @clicked="onClicked" @showFab="show"/>
 <ExperiencesPage id="mySkills"/>
 <ProjectsPage id="myProjects"/>
 <GetInTouch id="getInTouch"/> -->
-<!-- <button v-if="!showButton" class="button cssanimation sequence fadeInBottom" @click="scrollUp()">
+<button v-if="!showButton" class="button cssanimation sequence fadeInBottom" @click="scrollUp()">
     <svg
     xmlns="http://www.w3.org/2000/svg"
     class="back-to-top-icon"
@@ -28,7 +40,7 @@
     />
   </svg>
   <strong style="color: var(--text-primary-color)">Go up!</strong>
-</button> -->
+</button>
 </div>
 </div>
 <!-- IF ON PHONE!!! -->

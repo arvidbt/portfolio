@@ -1,5 +1,5 @@
 <template>
-    <div class=container>
+    <div class="skillpage-container">
         <h1 style="color: var(--text-primary-color)">My skills!</h1>
     </div>
 </template>
@@ -13,7 +13,7 @@ export default {
 
 
 <style scoped>
-.container {
+.skillpage-container {
     display: flex;
     justify-content: center;
     align-items: center;
