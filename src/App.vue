@@ -1,5 +1,5 @@
 <template>
-<div v-if="!isMobile">
+<div v-if="true">
 <StartPage id="startPage" @clicked="onClicked"/>
 <LandingPage id="aboutMe"/>
 <NavBar @clicked="onClicked" @showFab="show"/>
@@ -23,6 +23,11 @@
   </svg>
   <strong style="color: var(--text-primary-color)">Go up!</strong>
 </button>
+</div>
+<!-- IF ON PHONE!!! -->
+<div v-else class="mobile-view">
+  <NavBar @clicked="onClicked" @showFab="show"/>
+  <h1 style="color: var(--text-primary-color)">503 | Mobile site not ready yet.</h1>
 </div>
 </template>
 
@@ -48,24 +53,15 @@ export default {
   data() {
     return {
       showButton: false,
-      isMobile: false,
     }
   },
   methods: {
     onClicked(sideNavPick) {
-       if(sideNavPick === 'aboutMe') {
-        this.goto(sideNavPick)
-      } else if(sideNavPick === 'myProjects') {
-        this.goto(sideNavPick)
-      } else if(sideNavPick === 'getInTouch') {
-        this.goto(sideNavPick)
-      } else if(sideNavPick === 'mySkills') {
-        this.goto(sideNavPick)
-      } else {
-        return
-      }
+      this.goto(sideNavPick) 
+    
     },
     goto(componentID) {
+      console.log("here!")
       const scrollinto = document.querySelector('#'+componentID)
       scrollinto.scrollIntoView({ behavior: "smooth" }, false)
     },
@@ -76,14 +72,9 @@ export default {
     scrollUp() {
       document.getElementById('startPage').scrollIntoView({ behavior: "smooth"}, false)
     },
-    checkIfMobile() {
-      // TODO: Check if mobile. Set isMobile to true / false.
-      this.isMobile = false;
-    }
   },
   mounted() {
     this.showButton = true;
-    this.checkIfMobile();
   }
 }
 </script>

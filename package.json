@@ -11,6 +11,7 @@
     "core-js": "^3.8.3",
     "scrollreveal": "^4.0.9",
     "vue": "^3.2.13",
+    "vue-mobile-detection": "^2.0.1",
     "vue-router": "^4.0.3",
     "vue-scroll-reveal": "^1.0.11",
     "vuex": "^4.0.0"

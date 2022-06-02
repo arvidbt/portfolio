@@ -11,7 +11,6 @@
                 <p>Tools used: CSS3, HTML5, JavaScript, Vue</p>
             </div>
         </div>
-
         <!-- MIRA project slot -->
         <div class="skills"  @click="redirect('https://github.com/arvidbt/MIRA')">
             <img class="img-left" src="../assets/images/thirty.png"/>
@@ -55,7 +54,7 @@
          <div class="skills" @click="redirect('https://github.com/arvidbt/2048')">
             <img class="img-left" src="../assets/images/thirty.png"/>
             <div class="text-container">
-                <h1>2048 in Java.</h1>
+                <h1>2048 in Java, my first project.</h1>
                 <h3>One of my favorite mobile games of all times is 2048, a game where you combine equal numbered tiles to create one new, worth twice as much. </h3>
                 <h3>After building the game in C (which also can be found on my GitHub) I built it in Java, to practice using Swing.</h3>
                 <h3>Arguably, the game is not very pretty - both UI and codewise - but this was my first big solo project.</h3>
@@ -176,5 +175,25 @@ p {
     cursor: pointer;
     bottom: 10px;
     right: 40px;
+}
+
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
 }
 </style>

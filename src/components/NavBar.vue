@@ -71,17 +71,17 @@ export default {
     }
   },
   mounted () {
-    window.addEventListener('scroll', this.onScroll)
-    this.menuBtn = document.querySelector('.menu-btn')
-    this.menuBtn.addEventListener('click', () => {
-      if (!this.menuOpen) {
-        this.menuBtn.classList.add('open')
-        this.menuOpen = true
-      } else {
-        this.menuBtn.classList.remove('open')
-        this.menuOpen = false
-      }
-    })
+      window.addEventListener('scroll', this.onScroll)
+      this.menuBtn = document.querySelector('.menu-btn')
+      this.menuBtn.addEventListener('click', () => {
+        if (!this.menuOpen) {
+          this.menuBtn.classList.add('open')
+          this.menuOpen = true
+        } else {
+          this.menuBtn.classList.remove('open')
+          this.menuOpen = false
+        }
+      })
   },
   beforeUnmount () {
     window.removeEventListener('scroll', this.onScroll)

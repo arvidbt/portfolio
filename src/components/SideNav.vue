@@ -15,7 +15,7 @@ export default {
   },
   methods: {
     goto(value) {
-      console.log()
+      console.log(value)
       this.$emit('clicked', value)
     }
   }
