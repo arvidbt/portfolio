@@ -10,15 +10,15 @@
     <section>
       <NavBar @clicked="onClicked" @showFab="show"/>
     </section>
-    <section>
+    <!-- <section>
       <ExperiencesPage id="mySkills"/>
-    </section>
+    </section> -->
     <section>
       <ProjectsPage id="myProjects"/>
     </section>
-    <section>
+    <!-- <section>
       <GetInTouch id="getInTouch"/>
-    </section>
+    </section> -->
 <button v-if="!showButton" class="button-up cssanimation sequence fadeInBottom" @click="scrollUp()">
     <svg
     xmlns="http://www.w3.org/2000/svg"

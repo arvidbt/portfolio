@@ -166,6 +166,7 @@ export default {
     margin-left: 20px;
     margin-top: 20px;
     margin-bottom: 20px;
+    height: 450px;
 }
 
 
