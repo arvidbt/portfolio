@@ -27,10 +27,6 @@
 </button>
 </div>
 <!-- IF ON PHONE!!! -->
-<div v-else class="mobile-view">
-  <NavBar @clicked="onClicked" @showFab="show"/>
-  <h1 style="color: var(--text-primary-color)">503 | Mobile site not ready yet.</h1>
-</div>
 </template>
 
 <script>
