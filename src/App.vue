@@ -3,7 +3,7 @@
 <section>
 <StartPage id="startPage" @clicked="onClicked"/>
 </section>
-<section><LandingPage id="aboutMe"/></section>
+<!-- <section><LandingPage id="aboutMe"/></section> -->
 <!-- <NavBar @clicked="onClicked" @showFab="show"/>
 <ExperiencesPage id="mySkills"/>
 <ProjectsPage id="myProjects"/>
