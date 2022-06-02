@@ -1,5 +1,5 @@
 <template>
-    <div class="container content">
+    <div class="start-container content">
         <h1><span id="greeting">Hello</span> there!</h1>
         <h1><span id="greeting">Hello</span> there!</h1>
         <h2>
@@ -33,7 +33,7 @@ export default {
 </script>
 
 <style scoped>
-.container {
+.start-container {
     display: flex;
     justify-content: center;
     align-items: center;

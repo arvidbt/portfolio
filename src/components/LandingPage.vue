@@ -1,5 +1,5 @@
 <template>
-<div class="container">
+<div class="landingpage-container">
     <div class="image-container">
         <img src="../assets/images/arreman-2.png"/>
     </div>
@@ -35,7 +35,7 @@ export default {
 <style scoped>
 /* Google Fonts */
 @import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
-.container {
+.landingpage-container {
     display: flex;
     justify-content: center;
     align-items: center;

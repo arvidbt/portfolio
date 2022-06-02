@@ -5,7 +5,7 @@
       <StartPage id="startPage" @clicked="onClicked"/>
     </section>
     <section>
-
+      <section><LandingPage id="aboutMe"/></section>
     </section>
 <!-- <section><LandingPage id="aboutMe"/></section> -->
 <!-- <NavBar @clicked="onClicked" @showFab="show"/>
