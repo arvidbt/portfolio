@@ -48,7 +48,11 @@ export default {
 }
 
 .img-about {
-    height: 700px;
+    height: 50vh;
+    border-radius: 15px;
+    background: var(--background-color-secondary);
+    transition: 0.3s ease-in-out;
+
 }
 
 @keyframes rotation {

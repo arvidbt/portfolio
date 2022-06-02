@@ -1,5 +1,5 @@
 <template>
-<div class="body-html" v-if="true">
+<div class="body-html" v-if="!$isMobile()">
   <div> 
     <section>
       <StartPage id="startPage" @clicked="onClicked"/>
@@ -39,6 +39,9 @@
 </div>
 </div>
 <!-- IF ON PHONE!!! -->
+<div v-else>
+  <h1>Mobile view not ready yet.</h1>
+</div>
 </template>
 
 <script>
