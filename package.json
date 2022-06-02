@@ -4,11 +4,9 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "build": "vue-cli-service build"
   },
   "dependencies": {
-    "@vue/cli-plugin-eslint": "^5.0.4",
     "core-js": "^3.8.3",
     "scrollreveal": "^4.0.9",
     "vue": "^3.2.13",
@@ -29,7 +27,7 @@
     "eslint-plugin-import": "^2.25.3",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^5.1.0",
-    "eslint-plugin-vue": "^8.0.3",
+    "eslint-plugin-vue": "^8.7.1",
     "lint-staged": "^11.1.2"
   },
   "gitHooks": {
