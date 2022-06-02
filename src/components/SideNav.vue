@@ -43,6 +43,7 @@ export default {
       transform: translateX(0);
     }
   }
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap');
 
   .sidenav {
     height: 100%;
@@ -67,6 +68,7 @@ export default {
     transition: all .3s ease-in-out;
     display: block;
     width: fit-content;
+    font-family: 'Roboto', sans-serif;
     cursor: pointer;
   }
 

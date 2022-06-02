@@ -1,25 +1,26 @@
 <template>
 <div class="landingpage-container">
     <div class="image-container">
-        <img src="../assets/images/arreman-2.png"/>
+        <img class ="img-about" src="../assets/images/arreman-2.png"/>
     </div>
     <div class="about-me-container content">
         <strong>
-            <h2>
+            <h2 class="h2-title">A short introduction..</h2>
+            <h2 class="h2-landingpage">
                 I'm a Computer Science-student currently heading towards a B.sc at Umeå University. Currently,
                 I'm in my <span style="color: var(--accent-color); transition: all 0.3s ease-in-out;">3rd and final</span> year. I don't only like to learn about programming, I like to teach it aswell. That's
                 why I currently work as a teacher assistant alongside my studies, teaching various courses.
             </h2>
-            <h2>
+            <h2 class="h2-landingpage">
 
                 Those courses include Datastructures and Algorithms, Objective-Oriented Programming 
                 <span style="color: var(--accent-color); transition: all 0.3s ease-in-out;">, Imperative Programming in C,
                 Application Development in Java.</span>
             </h2>
 
-            <h2>I pride myself in being a driven and intrested person. I like undertaking new things and dive into it!</h2>
+            <h2 class="h2-landingpage">I pride myself in being a driven and intrested person. I like undertaking new things and dive into it!</h2>
 
-            <h2><span style="color: var(--accent-color); transition: all 0.3s ease-in-out;">I also have some industry experience, where I've worked in frontend development.</span></h2>
+            <h2 class="h2-landingpage"><span style="color: var(--accent-color); transition: all 0.3s ease-in-out;">I also have some industry experience, where I've worked in frontend development.</span></h2>
         </strong>
     </div>
 
@@ -39,13 +40,14 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: transparent;
+    background: var(--background-color-primary);
     top: 50px;
     width: 100vw;
     height: 100vh;
+    transition: 0.3s ease-in-out;
 }
 
-img {
+.img-about {
     height: 700px;
 }
 
@@ -82,20 +84,18 @@ img {
     background: transparent;
 }
 
-/* p {
-    font-size: 24px;
-    color: var(--text-primary-color);
-} */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap');
-h1 { color: var(--text-primary-color); font-family: 'Roboto', sans-serif;    font-size: 62px; font-weight: 800; line-height: 72px;  text-align: left; }
+.h1-landingpage { color: var(--text-primary-color); font-family: 'Roboto', sans-serif;    font-size: 62px; font-weight: 800; line-height: 72px;  text-align: left; }
 
-h2 { margin-left: 20px; margin-right: 20px; color: var(--text-primary-color); font-family: 'Roboto', sans-serif; font-size: 18px; font-weight: 800; line-height: 36px; text-align: lfet; }
+.h2-landingpage { margin-left: 20px; margin-right: 20px; color: var(--text-primary-color); font-family: 'Roboto', sans-serif; font-size: 18px; font-weight: 800; line-height: 36px; text-align: lfet; }
 
-p { color: var(--text-primary-color); font-family: 'Roboto', sans-serif; font-size: 18px; font-weight: 500; line-height: 32px; }
+.h2-title { margin-left: 20px; margin-right: 20px; color: var(--text-primary-color); font-family: 'Roboto', sans-serif; font-size: 28px; font-weight: 800; line-height: 36px; text-align: lfet; font-style: bold;}
 
-a { color: var(--text-primary-color); text-decoration: underline; }
+.p-landingpage { color: var(--text-primary-color); font-family: 'Roboto', sans-serif; font-size: 18px; font-weight: 500; line-height: 32px; }
 
-a:hover { color: #1c1c1c; text-decoration: underline; }
+.a-landingpage { color: var(--text-primary-color); text-decoration: underline; }
+
+.a-landingpage:hover { color: #1c1c1c; text-decoration: underline; }
 
 .content {
   position: relative;

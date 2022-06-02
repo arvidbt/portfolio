@@ -20,10 +20,11 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: transparent;
+    background: var(--background-color-primary);
     top: 50px;
     width: 100vw;
     height: 100vh;
+    transition: 0.3s ease-in-out;
 
 }
 
@@ -53,21 +54,4 @@ export default {
 		transform: scale(1, .025);
 	}
 }
-
-/* .cssanimation, .cssanimation span {
-    animation-duration: 1.5s;
-    animation-fill-mode: both;
-}
-
-.cssanimation span { display: inline-block }
-
-.fadeInBottom { animation-name: fadeInBottom }
-
-@keyframes fadeInBottom {
-    from {
-        opacity: 0;
-        transform: translateY(100%);
-    }
-    to { opacity: 1 }
-} */
 </style>

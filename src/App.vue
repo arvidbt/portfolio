@@ -1,5 +1,5 @@
 <template>
-<div v-if="true">
+<div class="body-html" v-if="true">
   <div> 
     <section>
       <StartPage id="startPage" @clicked="onClicked"/>
@@ -19,12 +19,7 @@
     <section>
       <GetInTouch id="getInTouch"/>
     </section>
-<!-- <section><LandingPage id="aboutMe"/></section> -->
-<!-- <NavBar @clicked="onClicked" @showFab="show"/>
-<ExperiencesPage id="mySkills"/>
-<ProjectsPage id="myProjects"/>
-<GetInTouch id="getInTouch"/> -->
-<button v-if="!showButton" class="button cssanimation sequence fadeInBottom" @click="scrollUp()">
+<button v-if="!showButton" class="button-up cssanimation sequence fadeInBottom" @click="scrollUp()">
     <svg
     xmlns="http://www.w3.org/2000/svg"
     class="back-to-top-icon"
@@ -95,7 +90,7 @@ export default {
 </script>
 
 <style scoped>
-.button {
+.button-up {
   background-color: var(--accent-color);
   position: fixed;
   width: 90px; 
@@ -112,26 +107,29 @@ export default {
 }
 
 
+
 .back-to-top-icon {
   width: 1rem;
   height: 1rem;
   color: var(--text-primary-color)
 }
 
-body {
+.body-html {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: var(--background-color-primary);
   width: 100vw;
   top: 0;
+  background: var(--background-color-primary);
   right:0;
   left: 0;
   max-width: 100%;
   overflow-x:hidden;
   transition: 0.3s ease-in-out;
+  
 }
 
+html,body{margin:0;padding:0}
 
 .cssanimation, .cssanimation span {
     animation-duration: 1.5s;

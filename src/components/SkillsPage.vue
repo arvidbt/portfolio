@@ -17,10 +17,10 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: transparent;
+    background: var(--background-color-primary);
     top: 50px;
     width: 100vw;
     height: 100vh;
-
+    transition: 0.3s ease-in-out;
 }
 </style>
