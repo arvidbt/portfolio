@@ -1,4 +1,7 @@
 <template>
+    <div class="project-intro-container">
+        <h1 class="h1-intro">These are some of the projects that I've worked on.</h1>
+    </div>
     <div class=project-container>
         <!-- This websites project slot -->
         <div class="skills" @click="redirect('https://github.com/arvidbt/portfolio')">
@@ -78,6 +81,7 @@ export default {
 
 
 <style scoped>
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap');
 .project-container {
     display: grid;
     grid-template-columns: auto auto;
@@ -89,6 +93,23 @@ export default {
     height: fit-content;
     min-height: 100vh;
     transition: 0.3s ease-in-out;
+}
+
+.project-intro-container {
+    display: flex;
+    width: 100vw;
+    height: fit-content;
+    background: var(--background-color-primary);
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+
+}
+
+.h1-intro {
+    font-family: 'Roboto', sans-serif;
+    font-size: 28px;
+    color: var(--text-primary-color);
 }
 
 .skills{
@@ -136,7 +157,6 @@ export default {
     text-align: left;
     width: 20vw;
 }
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap');
 .h1-projects {
     font-size: 28px;
     color: var(--text-primary-color);
