@@ -1,9 +1,9 @@
 <template>
   <div id="mySidenav" class="sidenav slide-right">
-    <a @click="goto('aboutMe')"><h2>About me</h2></a>
-    <a @click="goto('mySkills')"><h2>My Skills</h2></a>
-    <a @click="goto('myProjects')"><h2>My projects</h2></a>
-    <a @click="goto('getInTouch')"><h2>Get in touch</h2></a>
+    <a class="a-sidebar" @click="goto('aboutMe')"><h2>About me</h2></a>
+    <a class="a-sidebar" @click="goto('mySkills')"><h2>My Skills</h2></a>
+    <a class="a-sidebar" @click="goto('myProjects')"><h2>My projects</h2></a>
+    <a class="a-sidebar" @click="goto('getInTouch')"><h2>Get in touch</h2></a>
   </div>
 </template>
 
@@ -59,7 +59,7 @@ export default {
     padding-top: 60px;
   }
 
-  .sidenav a {
+  .sidenav .a-sidebar {
     padding: 0 0 0 32px;
     margin-top: 10px;
     text-decoration: none;
@@ -73,7 +73,7 @@ export default {
   }
 
   /* When you mouse over the navigation links, change their color */
-  .sidenav a:hover {
+  .sidenav .a-sidebar:hover {
     color: var(--accent-color);
     font-size: 30px;
   }
@@ -97,7 +97,7 @@ export default {
     .sidenav {
       padding-top: 15px;
     }
-    .sidenav a {
+    .sidenav .a-sidebar {
       font-size: 18px;
     }
   }
