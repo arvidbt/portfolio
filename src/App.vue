@@ -1,8 +1,10 @@
 <template>
 <div v-if="true">
+<section>
 <StartPage id="startPage" @clicked="onClicked"/>
-<!-- <LandingPage id="aboutMe"/>
-<NavBar @clicked="onClicked" @showFab="show"/>
+</section>
+<section><LandingPage id="aboutMe"/></section>
+<!-- <NavBar @clicked="onClicked" @showFab="show"/>
 <ExperiencesPage id="mySkills"/>
 <ProjectsPage id="myProjects"/>
 <GetInTouch id="getInTouch"/> -->
