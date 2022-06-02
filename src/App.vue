@@ -1,11 +1,11 @@
 <template>
 <div v-if="true">
 <StartPage id="startPage" @clicked="onClicked"/>
-<LandingPage id="aboutMe"/>
+<!-- <LandingPage id="aboutMe"/>
 <NavBar @clicked="onClicked" @showFab="show"/>
 <ExperiencesPage id="mySkills"/>
 <ProjectsPage id="myProjects"/>
-<GetInTouch id="getInTouch"/>
+<GetInTouch id="getInTouch"/> -->
 <button v-if="!showButton" class="button cssanimation sequence fadeInBottom" @click="scrollUp()">
     <svg
     xmlns="http://www.w3.org/2000/svg"
