@@ -89,7 +89,7 @@ export default {
 
 .h2-landingpage { margin-left: 20px; margin-right: 20px; color: var(--text-primary-color); font-family: 'Roboto', sans-serif; font-size: 18px; font-weight: 800; line-height: 36px; text-align: lfet; }
 
-.h2-title { margin-left: 20px; margin-right: 20px; color: var(--text-primary-color); font-family: 'Roboto', sans-serif; font-size: 28px; font-weight: 800; line-height: 36px; text-align: lfet; font-style: bold;}
+.h2-title { margin-top: 20px; margin-left: 20px; margin-right: 20px; color: var(--text-primary-color); font-family: 'Roboto', sans-serif; font-size: 28px; font-weight: 800; line-height: 36px; text-align: lfet; font-style: bold;}
 
 .p-landingpage { color: var(--text-primary-color); font-family: 'Roboto', sans-serif; font-size: 18px; font-weight: 500; line-height: 32px; }
 

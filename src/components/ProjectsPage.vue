@@ -121,11 +121,11 @@ export default {
 }
 
 .skills:not(hover) {
-    transition: 0.2s all ease-in-out;
+    transition: 0.3s all ease-in-out;
 }
 
 .skills:hover .p-projects {
-    transition: 0.2s all ease-in-out;
+    transition: 0.3s all ease-in-out;
     color: var(--text-primary-color)
 }
 
@@ -169,46 +169,4 @@ export default {
     height: 450px;
 }
 
-
-
-.social-icon:hover {
-  height: 40px;
-  transition: 0.2s all ease-in-out;
-}
-
-.social-icon:not(hover) {
-  transition: 0.2s all ease-in-out;
-}
-
-.social-icon {
-  height: 50px;
-}
-
-.clickable-div {
-    display: flex;
-    position: absolute;
-    cursor: pointer;
-    bottom: 10px;
-    right: 40px;
-}
-
-.collapsible {
-  background-color: #777;
-  color: white;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
-}
-
-.content {
-  padding: 0 18px;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
-  background-color: #f1f1f1;
-}
 </style>
