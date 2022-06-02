@@ -1,14 +1,18 @@
 <template>
 <div v-if="true">
-<section>
-<StartPage id="startPage" @clicked="onClicked"/>
-</section>
+  <div> 
+    <section>
+      <StartPage id="startPage" @clicked="onClicked"/>
+    </section>
+    <section>
+
+    </section>
 <!-- <section><LandingPage id="aboutMe"/></section> -->
 <!-- <NavBar @clicked="onClicked" @showFab="show"/>
 <ExperiencesPage id="mySkills"/>
 <ProjectsPage id="myProjects"/>
 <GetInTouch id="getInTouch"/> -->
-<button v-if="!showButton" class="button cssanimation sequence fadeInBottom" @click="scrollUp()">
+<!-- <button v-if="!showButton" class="button cssanimation sequence fadeInBottom" @click="scrollUp()">
     <svg
     xmlns="http://www.w3.org/2000/svg"
     class="back-to-top-icon"
@@ -24,7 +28,8 @@
     />
   </svg>
   <strong style="color: var(--text-primary-color)">Go up!</strong>
-</button>
+</button> -->
+</div>
 </div>
 <!-- IF ON PHONE!!! -->
 </template>
@@ -77,7 +82,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .button {
   background-color: var(--accent-color);
   position: fixed;
