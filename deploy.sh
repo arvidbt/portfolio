@@ -9,6 +9,6 @@ cd dist
 # echo 'www.example.com' > CNAME
 git init
 git add -A
-git commit -m 'deploy'
+git commit -m 'deploy' --no-verify
 git push -f git@github.com:arvidbt/portfolio.git main:gh-pages
 cd -
