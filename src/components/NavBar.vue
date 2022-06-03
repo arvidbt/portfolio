@@ -18,7 +18,9 @@
     </div>
 
   </nav>
-  <SideBar @clicked="onClicked" v-if="menuOpen"/>
+  <div v-if="false">
+    <SideBar @clicked="onClicked" v-if="menuOpen"/>
+  </div>
 </template>
 
 <script>

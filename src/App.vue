@@ -1,5 +1,5 @@
 <template>
-<div class="body-html" v-if="true">
+<div class="body-html" v-if="!$isMobile()">
   <div> 
     <section>
       <StartPage id="startPage" @clicked="onClicked"/>
@@ -40,7 +40,7 @@
 </div>
 <!-- IF ON PHONE!!! -->
 <div v-else>
-  <h1>Mobile view not ready yet.</h1>
+  <MobileView/>
 </div>
 </template>
 
@@ -51,6 +51,7 @@ import LandingPage from './components/AboutPage.vue'
 import ExperiencesPage from './components/SkillsPage.vue'
 import ProjectsPage from './components/ProjectsPage.vue'
 import GetInTouch from './components/ContactPage.vue'
+import MobileView from './views/MobileView.vue'
 
 export default {
   name: 'App',
@@ -61,6 +62,7 @@ export default {
     StartPage,
     ProjectsPage,
     GetInTouch,
+    MobileView,
   },
 
   data() {
