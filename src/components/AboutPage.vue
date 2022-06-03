@@ -1,26 +1,46 @@
 <template>
-<div class="landingpage-container">
+<div class="aboutme-page-container">
     <div class="image-container">
         <img class ="img-about" src="../assets/images/arreman-2.png"/>
     </div>
+    <!-- 
+      https://www.umu.se/utbildning/kurser/datastrukturer-och-algoritmer-c/
+      https://www.umu.se/utbildning/kurser/programmeringsteknik-med-c-och-matlab/
+      https://www.umu.se/utbildning/kurser/objektorienterad-programmeringsmetodik/
+      https://www.umu.se/utbildning/kurser/applikationsutveckling-i-java/
+      https://www.umu.se/utbildning/kurser/imperativ-programmering-c/
+     -->
     <div class="about-me-container content">
         <strong>
             <h2 class="h2-title">A short introduction..</h2>
             <h2 class="h2-landingpage">
-                I'm a Computer Science-student currently heading towards a B.sc at Umeå University. Currently,
-                I'm in my <span style="color: var(--accent-color); transition: all 0.3s ease-in-out;">3rd and final</span> year. I don't only like to learn about programming, I like to teach it aswell. That's
-                why I currently work as a teacher assistant alongside my studies, teaching various courses.
+                I'm a Computer Science-student currently heading towards a B.sc at Umeå University. <br>
+                Currently, I'm in my <span style="color: var(--accent-color); transition: all 0.3s ease-in-out;">3rd and final</span> year. I don't only like to learn about programming,<br> 
+                I like to teach it aswell. 
+                That's why I currently work as a teacher assistant alongside<br> 
+                my studies, teaching various courses.
             </h2>
             <h2 class="h2-landingpage">
 
-                Those courses include Datastructures and Algorithms, Objective-Oriented Programming 
-                <span style="color: var(--accent-color); transition: all 0.3s ease-in-out;">, Imperative Programming in C,
-                Application Development in Java.</span>
+                Those courses include:  <span style="color: var(--accent-color); transition: all 0.3s ease-in-out;">(clicking name will redirect to coursepage)</span> <br> 
+                - Datastructures and Algorithms <br> 
+                - Objective-Oriented Programming<br>
+                - Programming in C and MatLab
+                <span style="color: var(--accent-color); transition: all 0.3s ease-in-out;"><br> 
+                - Imperative Programming in C <br> 
+                - Application Development in Java.
+                </span>
             </h2>
 
-            <h2 class="h2-landingpage">I pride myself in being a driven and intrested person. I like undertaking new things and dive into it!</h2>
+            <h2 class="h2-landingpage">I pride myself in being a driven and intrested person. I like undertaking new things<br>
+             and dive into it!
+             </h2>
 
-            <h2 class="h2-landingpage"><span style="color: var(--accent-color); transition: all 0.3s ease-in-out;">I also have some industry experience, where I've worked in frontend development.</span></h2>
+            <h2 class="h2-landingpage">
+              <span style="color: var(--accent-color); transition: all 0.3s ease-in-out;">
+                I also have some industry experience, where I've worked in frontend development.
+              </span>
+            </h2>
         </strong>
     </div>
 
@@ -36,7 +56,7 @@ export default {
 <style scoped>
 /* Google Fonts */
 @import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
-.landingpage-container {
+.aboutme-page-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -48,25 +68,18 @@ export default {
 }
 
 .img-about {
-    height: 50vh;
+    height: 70vh;
     border-radius: 15px;
     background: var(--background-color-secondary);
     transition: 0.3s ease-in-out;
 
 }
 
-@keyframes rotation {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(359deg);
-  }
-}
-
 .about-me-container {
     width: 40vw;
-    height: 50vh;
+    min-width: fit-content;
+    height: 70vh;
+    min-height: fit-content;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -84,8 +97,8 @@ export default {
     height: 60vh;
     display: flex;
     justify-content: center;
-    align-items: center;
     background: transparent;
+    align-items: center;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap');

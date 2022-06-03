@@ -47,10 +47,10 @@
 <script>
 import StartPage from './components/StartPage.vue'
 import NavBar from './components/NavBar.vue'
-import LandingPage from './components/LandingPage.vue'
+import LandingPage from './components/AboutPage.vue'
 import ExperiencesPage from './components/SkillsPage.vue'
 import ProjectsPage from './components/ProjectsPage.vue'
-import GetInTouch from './components/GetInTouch.vue'
+import GetInTouch from './components/ContactPage.vue'
 
 export default {
   name: 'App',

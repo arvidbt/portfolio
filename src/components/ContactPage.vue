@@ -1,6 +1,6 @@
 <template>
     <div class="contactpage-container">
-        <div class="contact-container">
+        <div class="contact-info-container">
             <h1>Let's make something happen!</h1>
         </div>
     </div>
@@ -25,10 +25,9 @@ export default {
     width: 100vw;
     height: 100vh;
     transition: 0.3s ease-in-out;
-
 }
 
-.contact-container {
+.contact-info-container {
     color: var(--text-primary-color);
     display: flex;
     align-items: center;
@@ -38,20 +37,5 @@ export default {
     background-color: var(--background-color-secondary);
     border-radius: 20px;
     animation: wipe-enter 1s 1;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .contact-animation {
-    animation: wipe-enter 1s 1;
-  }
-}
-
-@keyframes wipe-enter {
-	0% {
-		transform: scale(0, .025);
-	}
-	50% {
-		transform: scale(1, .025);
-	}
 }
 </style>

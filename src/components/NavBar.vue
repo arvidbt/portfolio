@@ -20,13 +20,13 @@
     </div>
 
   </nav>
-  <SideNav @clicked="onClicked" v-if="menuOpen"/>
+  <SideBar @clicked="onClicked" v-if="menuOpen"/>
 </template>
 
 <script>
 import SocialButton from './SocialButton.vue'
 import ThemeButton from './ThemeButton.vue'
-import SideNav from './SideNav.vue'
+import SideBar from './SideBar.vue'
 
 export default {
   name: 'NavBar',
@@ -34,7 +34,7 @@ export default {
   components: {
     SocialButton,
     ThemeButton,
-    SideNav
+    SideBar,
   },
   data () {
     return {

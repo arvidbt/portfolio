@@ -4,7 +4,7 @@
     </div>
     <div class=project-container>
         <!-- This websites project slot -->
-        <div class="skills" @click="redirect('https://github.com/arvidbt/portfolio')">
+        <div class="inner-project-container" @click="redirect('https://github.com/arvidbt/portfolio')">
             <img class="img-left" src="../assets/images/thirty.png"/>
             <div class="text-container">
                 <h1 class="h1-projects">This website.</h1>
@@ -15,7 +15,7 @@
             </div>
         </div>
         <!-- MIRA project slot -->
-        <div class="skills"  @click="redirect('https://github.com/arvidbt/MIRA')">
+        <div class="inner-project-container"  @click="redirect('https://github.com/arvidbt/MIRA')">
             <img class="img-left" src="../assets/images/thirty.png"/>
             <div class="text-container">
                 <h1 class="h1-projects">MIRA.</h1>
@@ -25,7 +25,7 @@
                 <p class="p-projects">Tools used: CSS3, HTML5, JavaScript, Axios, Express, SQLite</p>
             </div>
         </div>
-        <div class="skills" @click="redirect('https://github.com/arvidbt/PBLogger')">
+        <div class="inner-project-container" @click="redirect('https://github.com/arvidbt/PBLogger')">
             <img class="img-left" src="../assets/images/thirty.png"/>
             <div class="text-container">
                 <h1 class="h1-projects">PBLogger.</h1>
@@ -35,7 +35,7 @@
                 <p class="p-projects">Tools used: Kotlin, Android Studio, Figma</p>
             </div>
         </div>
-        <div class="skills">
+        <div class="inner-project-container">
             <img class="img-left" src="../assets/images/thirty.png"/>
             <div class="text-container">
                 <h1 class="h1-projects">Thirty.</h1>
@@ -44,7 +44,7 @@
                 <p class="p-projects">Tools used: Kotlin, Android Studio, Figma</p>
             </div>
         </div>
-        <div class="skills">
+        <div class="inner-project-container">
             <img class="img-left" src="../assets/images/thirty.png"/>
             <div class="text-container">
                 <h1 class="h1-projects">Anti-Tower Defence.</h1>
@@ -54,7 +54,7 @@
             </div>
         </div>
 
-         <div class="skills" @click="redirect('https://github.com/arvidbt/2048')">
+         <div class="inner-project-container" @click="redirect('https://github.com/arvidbt/2048')">
             <img class="img-left" src="../assets/images/thirty.png"/>
             <div class="text-container">
                 <h1 class="h1-projects">2048.</h1>
@@ -112,7 +112,7 @@ export default {
     color: var(--text-primary-color);
 }
 
-.skills{
+.inner-project-container{
     /* React, JS, Java, HTML5, CSS3, NodeJS, MySQL, Python, C, MaterialUI, Figma */
     display: flex;
     min-width: 30vw;
@@ -129,7 +129,7 @@ export default {
     opacity: 0.7;
 }
 
-.skills:hover {
+.inner-project-container:hover {
     background-color: var(--accent-color);
     color: var(--text-primary-color);
     cursor: pointer;
@@ -137,15 +137,15 @@ export default {
     opacity: 1;
 }
 
-.skills:not(hover) .p-projects {
+.inner-project-container:not(hover) .p-projects {
     color: var(--background-color-secondary)
 }
 
-.skills:not(hover) {
+.inner-project-container:not(hover) {
     transition: 0.3s all ease-in-out;
 }
 
-.skills:hover .p-projects {
+.inner-project-container:hover .p-projects {
     transition: 0.3s all ease-in-out;
     color: var(--text-primary-color)
 }
