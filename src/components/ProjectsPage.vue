@@ -40,7 +40,7 @@
         </div>
                 <!-- MIRA project slot -->
             <div class="large-project-container">
-                <img class="img-left" src="../assets/images/port.png" @click="redirect('https://github.com/arvidbt/MIRA')"/>
+                <img class="img-left" src="../assets/images/mira.png" @click="redirect('https://github.com/arvidbt/MIRA')"/>
                 <div class="text-container">
                     <h1 class="h1-projects">MIRA.</h1>
                     <h3 class="h3-projects">A web application me and my friend Tomas Diaz made during a introduction course to databases.</h3>
