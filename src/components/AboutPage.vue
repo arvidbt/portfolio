@@ -23,12 +23,12 @@
             <h2 class="h2-landingpage">
 
                 Those courses include:  <span style="color: var(--accent-color); transition: all 0.3s ease-in-out;">(clicking name will redirect to coursepage)</span> <br> 
-                - Datastructures and Algorithms <br> 
-                - Objective-Oriented Programming<br>
-                - Programming in C and MatLab
+                - <span style="cursor: pointer" @click="linkToCourse('https://www.umu.se/utbildning/kurser/datastrukturer-och-algoritmer-c/')">Datastructures and Algorithms</span><br> 
+                - <span style="cursor: pointer" @click="linkToCourse('https://www.umu.se/utbildning/kurser/objektorienterad-programmeringsmetodik/')">Objective-Oriented Programming</span><br>
+                - <span style="cursor: pointer" @click="linkToCourse('https://www.umu.se/utbildning/kurser/programmeringsteknik-med-c-och-matlab/')">Programming in C and MatLab</span>
                 <span style="color: var(--accent-color); transition: all 0.3s ease-in-out;"><br> 
-                - Imperative Programming in C <br> 
-                - Application Development in Java.
+                - <span style="cursor: pointer" @click="linkToCourse('https://www.umu.se/utbildning/kurser/imperativ-programmering-c/')">Imperative Programming in C</span> <br> 
+                - <span style="cursor: pointer" @click="linkToCourse('https://www.umu.se/utbildning/kurser/applikationsutveckling-i-java/')">Application Development in Java.</span>
                 </span>
             </h2>
 
@@ -50,6 +50,11 @@
 <script>
 export default {
   name: 'LandingPage',
+  methods: {
+    linkToCourse(link) {
+      window.open(link, 'mywindow')
+    }
+  }
 }
 </script>
 
