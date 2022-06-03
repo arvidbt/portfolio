@@ -54,7 +54,7 @@ export default {
     z-index: 1;
     top: 0;
     left: 0;
-    background: var(--background-color-primary);
+    background: transparent;
     overflow-x: hidden;
     padding-top: 60px;
   }
@@ -63,7 +63,7 @@ export default {
     padding: 0 0 0 32px;
     margin-top: 10px;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 18px;
     color: var(--text-primary-color);
     transition: all .3s ease-in-out;
     display: block;
@@ -75,7 +75,7 @@ export default {
   /* When you mouse over the navigation links, change their color */
   .sidenav .a-sidebar:hover {
     color: var(--accent-color);
-    font-size: 30px;
+    font-size: 20px;
   }
 
   /* Position and style the close button (top right corner) */
@@ -84,12 +84,6 @@ export default {
     right: 25px;
     font-size: 36px;
     margin-left: 50px;
-  }
-
-  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
-  #main {
-    transition: margin-left 0.5s;
-    padding: 20px;
   }
 
   /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */

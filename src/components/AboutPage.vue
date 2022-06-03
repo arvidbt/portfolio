@@ -70,7 +70,6 @@ export default {
 .img-about {
     height: 70vh;
     border-radius: 15px;
-    background: var(--background-color-secondary);
     transition: 0.3s ease-in-out;
 
 }
@@ -85,7 +84,6 @@ export default {
     align-items: center;
     text-align: left;
     border-radius: 15px;
-    background: var(--background-color-secondary);
     transition: all 0.3s ease-in-out;
 
 
@@ -99,6 +97,7 @@ export default {
     justify-content: center;
     background: transparent;
     align-items: center;
+
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap');

@@ -1,19 +1,17 @@
 <template>
   <nav class="navbar" :class="{'navbar--hidden': !showNavBar}">
-    <div class="home-icon">
+    <div class="left-nav-container">
 
       <div class="menu-btn">
         <div class="menu-btn__burger"></div>
       </div>
-      <div class=inner-home-container-left>
-          <!-- <router-link style="text-decoration: none" to="/"><h1 class="home-link">Arvid!</h1></router-link> -->
-      </div>
-      <div class="inner-home-container-right">
+
+      <div class="theme-button-container">
           <ThemeButton/>
       </div>
     </div>
     <!-- here social links be at yeeeboi -->
-    <div class="socials">
+    <div class="social-icons-container">
       <SocialButton link="https://www.linkedin.com/in/arvid-bergman-th%C3%B6rn-1843701b8/" icon="linkedin.svg" iconType="LinkedIn"/>
       <SocialButton link="https://github.com/arvidbt" icon="github.svg" iconType="GitHub"/>
       <SocialButton link="https://arvidbt.github.io/resume/" icon="cv.svg" iconType="CV"/>
@@ -90,7 +88,7 @@ export default {
 </script>
 
 <style scoped>
-.socials {
+.social-icons-container {
     background-color: var(--background-color-primary);
     margin-right: 40px;
     margin-top: 20px;
@@ -109,7 +107,7 @@ export default {
     transition: 0.3s ease-in-out;
   }
 
-  .inner-home-container-right {
+  .theme-button-container {
     display: flex;
     margin-left: 40px;
     justify-content: center;
@@ -117,13 +115,7 @@ export default {
     transition: 0.3s ease-in-out;
   }
 
-  .home-link {
-    margin-left: 40px;
-    color: var(--text-primary-color);
-    transition: 0.3s ease-in-out;
-  }
-
-  .home-icon {
+  .left-nav-container {
       background-color: var(--background-color-primary);
       margin-top: 20px;
       height: 40px;
@@ -173,7 +165,6 @@ export default {
     height: 20px;
     cursor: pointer;
     transition: all .3s ease-in-out;
-    /* border: 3px solid #fff; */
   }
   .menu-btn__burger {
     width: 30px;
@@ -209,7 +200,6 @@ export default {
   .menu-btn__burger::after {
     transform: translateY(16px);
   }
-  /* ANIMATION */
   .menu-btn.open .menu-btn__burger {
     transform: translateX(-50px);
     background: transparent;

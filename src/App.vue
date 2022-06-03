@@ -1,5 +1,5 @@
 <template>
-<div class="body-html" v-if="!$isMobile()">
+<div class="body-html" v-if="true">
   <div> 
     <section>
       <StartPage id="startPage" @clicked="onClicked"/>
@@ -129,6 +129,7 @@ export default {
   max-width: 100%;
   overflow-x:hidden;
   transition: 0.3s ease-in-out;
+  scroll-behavior:smooth;
   
 }
 
