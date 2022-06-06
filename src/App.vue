@@ -1,42 +1,39 @@
 <template>
-<div class="body-html" v-if="!$isMobile()">
-  <div> 
+<div class="body-html" v-if="true">
+
     <section>
       <StartPage id="startPage" @clicked="onClicked"/>
     </section>
+
+      <section>
+        <NavBar @clicked="onClicked" @showFab="show"/>
+      </section>
     <section>
       <section><LandingPage id="aboutMe"/></section>
     </section>
-    <section>
-      <NavBar @clicked="onClicked" @showFab="show"/>
+
+
+    <section id="myProjects">
+      <section><ProjectsPage/></section>
     </section>
-    <!-- <section>
-      <ExperiencesPage id="mySkills"/>
-    </section> -->
-    <section>
-      <ProjectsPage id="myProjects"/>
-    </section>
-    <!-- <section>
-      <GetInTouch id="getInTouch"/>
-    </section> -->
-<button v-if="!showButton" class="button-up cssanimation sequence fadeInBottom" @click="scrollUp()">
-    <svg
-    xmlns="http://www.w3.org/2000/svg"
-    class="back-to-top-icon"
-    fill="none"
-    viewBox="0 0 24 24"
-    stroke="currentColor"
-  >
-    <path
-      stroke-linecap="round"
-      stroke-linejoin="round"
-      stroke-width="2"
-      d="M7 11l5-5m0 0l5 5m-5-5v12"
-    />
-  </svg>
-  <strong style="color: var(--text-primary-color)">Go up!</strong>
-</button>
-</div>
+
+    <button v-if="!showButton" class="button-up cssanimation sequence fadeInBottom" @click="scrollUp()">
+        <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="back-to-top-icon"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M7 11l5-5m0 0l5 5m-5-5v12"
+        />
+      </svg>
+      <strong style="color: var(--text-primary-color)">Go up!</strong>
+    </button>
 </div>
 <!-- IF ON PHONE!!! -->
 <div v-else>
@@ -52,6 +49,7 @@ import ExperiencesPage from './components/SkillsPage.vue'
 import ProjectsPage from './components/ProjectsPage.vue'
 import GetInTouch from './components/ContactPage.vue'
 import MobileView from './views/MobileView.vue'
+import ContactPage from './components/ContactPage.vue'
 
 export default {
   name: 'App',
@@ -63,7 +61,9 @@ export default {
     ProjectsPage,
     GetInTouch,
     MobileView,
-  },
+    ContactPage,
+    ContactPage
+},
 
   data() {
     return {
@@ -72,14 +72,9 @@ export default {
   },
   methods: {
     onClicked(sideNavPick) {
-      this.goto(sideNavPick) 
-    
+      document.getElementById(sideNavPick).scrollIntoView({ behavior: "smooth"}, false)
     },
-    goto(componentID) {
-      console.log("here!")
-      const scrollinto = document.querySelector('#'+componentID)
-      scrollinto.scrollIntoView({ behavior: "smooth" }, false)
-    },
+
     show(value) {
       console.log(value)
         this.showButton = value

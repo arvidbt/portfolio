@@ -3,25 +3,22 @@
         <h1 class="h1-intro">These are some of the projects that I've worked on.</h1>
     </div>
     <div class=project-container>
-
         <!-- This websites project slot -->
         <div class="large-project-container">
             <img @click="redirect('https://github.com/arvidbt/portfolio')" class="img-left" src="../assets/images/port.png" title="test"/>
             <img @click="redirect('https://github.com/arvidbt/PBLogger')" class="img-left" src="../assets/images/homescreen.png"/>
         </div>
-
-
+    </div>
+    <div class=project-container>
                 <!-- MIRA project slot -->
         <div class="large-project-container">
-            <div class="img__wrap">
-                <img class="img-left" src="../assets/images/thirty.png"/>
-                <p class="img__description">Funkar detta?</p>
-            </div>
-            <div class="img__wrap">
-                <img class="img-left" src="../assets/images/mira.png" @click="redirect('https://github.com/arvidbt/MIRA')"/>
-                <p class="img__description">Funkar detta?</p>
-            </div>
-        </div>
+            <img class="img-left" src="../assets/images/thirty.png"/>
+            <img class="img-left" src="../assets/images/mira.png" @click="expand()"/>
+        </div> 
+                    <div v-if="expanded" class="desc-div"><h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam elementum purus non mattis dictum. Nunc elementum semper felis quis gravida. Pellentesque lacus mauris, aliquam id vulputate sit amet, pharetra nec risus. Cras ac fermentum massa. Praesent eros turpis, consectetur sit amet vehicula quis, tempus in elit. Integer condimentum turpis ac ipsum porttitor dapibus. Etiam ultrices, nisl ac iaculis tincidunt, lectus dui porta est, sed laoreet ex sapien eu ante. Vivamus aliquam maximus cursus. Suspendisse sed purus vehicula, egestas libero nec, luctus erat. Fusce condimentum tempor tortor, sit amet molestie eros mollis quis. Nunc nec pharetra nisl, et tempus eros. Morbi.</h1></div>
+
+    </div>
+     <div class=project-container>
 
 
         <div class="large-project-container not-clickable-div">
@@ -34,10 +31,22 @@
 <script>
 export default {
     name: 'MyProjects',
+    inheritAttrs: false,
+    data() {
+        return {
+            expanded: false,
+
+        }
+    },
     methods: {
         redirect(linkToSite) {
             window.open(linkToSite, 'mywindow')
         },
+
+        expand() {
+            this.expanded = !this.expanded
+            console.log(this.expanded)
+        }
     }
 }
 
@@ -47,51 +56,34 @@ export default {
 <style scoped>
 /* Tester */
 /* quick reset */
-* {
-  margin: 0;
-  padding: 0;
-  border: 0;
-}
 
-/* relevant styles */
-.img__wrap {
-  position: relative;
-}
-
-.img__description {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: red;
-  color: #fff;
-  visibility: hidden;
-  opacity: 0;
-
-  /* transition effect. not necessary */
-  transition: opacity .2s, visibility .2s;
-}
-
-.img__wrap:hover .img__description {
-  visibility: visible;
-  opacity: 1;
-}
 /* Slut tester */
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap');
 
+.desc-div {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    box-sizing: border-box;
+    background: var(--background-color-secondary);
+    border-radius: 15px;
+    max-width: 100%;
+    border: 5px solid var(--background-color-secondary);
+    transition: 0.3s all ease-in-out;
+    box-shadow: 5px 5px var(--accent-color);
+    
+}
+
 .project-container {
     display: grid;
-    grid-template-rows: repeat(3, fit-content);
-    gap: 50px 100px;
-    grid-auto-flow: row;
+    /* grid-template-rows: repeat(3, fit-content); */
+    grid-auto-flow: column;
     justify-content: center;
     align-items: center;
     background: var(--background-color-primary);
     top: 50px;
-    width: 100vw;
-    height: fit-content;
-    min-height: 100vh;
     transition: 0.3s ease-in-out;
 }
 
@@ -126,21 +118,6 @@ export default {
     font-size: 28px;
     color: var(--text-primary-color);
     transition: 0.3s all ease-in-out;
-}
-
-.inner-project-container{
-    display: flex;
-    min-width: 30vw;
-    width: fit-content;
-    min-height: fit-content;
-    position: relative;
-    color: var(--accent-color);
-    border-radius: 30px;
-    margin-bottom: 5vh;
-    margin-top: 5vh;
-    margin-left: 20px;
-    margin-right: 20px;
-    /* opacity: 0.7; */
 }
 
 .large-project-container {
@@ -213,10 +190,7 @@ export default {
 .img-left {
     border-radius: 20px;
     cursor: pointer;
-    margin-right: 20px;
-    margin-left: 20px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin: 30px;
     height: 420px;
     border: 5px solid var(--background-color-secondary);
     transition: 0.3s all ease-in-out;

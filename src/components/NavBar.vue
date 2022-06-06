@@ -18,7 +18,7 @@
     </div>
 
   </nav>
-  <div v-if="false">
+  <div>
     <SideBar @clicked="onClicked" v-if="menuOpen"/>
   </div>
 </template>
@@ -46,17 +46,18 @@ export default {
   },
   methods: {
     onClicked(AboutMe) {
-      if(AboutMe === 'aboutMe') {
-        this.$emit('clicked', AboutMe)
-      } else if(AboutMe === 'mySkills') {
-        this.$emit('clicked', AboutMe)
-      } else if(AboutMe === 'myProjects') {
-        this.$emit('clicked', AboutMe)
-      } else if(AboutMe === 'getInTouch') {
-        this.$emit('clicked', AboutMe)
-      } else {
-        return
-      }
+      this.$emit('clicked', AboutMe)
+      // if(AboutMe === 'aboutMe') {
+      //   this.$emit('clicked', AboutMe)
+      // } else if(AboutMe === 'mySkills') {
+      //   this.$emit('clicked', AboutMe)
+      // } else if(AboutMe === 'myProjects') {
+      //   this.$emit('clicked', AboutMe)
+      // } else if(AboutMe === 'getInTouch') {
+      //   this.$emit('clicked', AboutMe)
+      // } else {
+      //   return
+      // }
     },
 
     onScroll () {

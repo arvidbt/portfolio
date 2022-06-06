@@ -1,8 +1,8 @@
 <template>
   <div id="mySidenav" class="sidenav slide-right">
     <a class="a-sidebar" @click="goto('aboutMe')"><h2>About me</h2></a>
-    <a class="a-sidebar" @click="goto('mySkills')"><h2>My Skills</h2></a>
     <a class="a-sidebar" @click="goto('myProjects')"><h2>My projects</h2></a>
+    <a class="a-sidebar" @click="goto('mySkills')"><h2>My Skills</h2></a>
     <a class="a-sidebar" @click="goto('getInTouch')"><h2>Get in touch</h2></a>
   </div>
 </template>
@@ -15,10 +15,13 @@ export default {
   },
   methods: {
     goto(value) {
-      console.log(value)
       this.$emit('clicked', value)
+    },
+
+    getElement() {
+      console.log("hej")
     }
-  }
+  },
 }
 </script>
 
@@ -70,12 +73,19 @@ export default {
     width: fit-content;
     font-family: 'Roboto', sans-serif;
     cursor: pointer;
+    text-decoration: none;
+    background-image: linear-gradient(var(--text-primary-color), var(--text-primary-color));
+    background-size: 0% 0.1em;
+    background-position-y: 100%;
+    background-position-x: 0%;
+    background-repeat: no-repeat;
+    transition: background-size 0.3s ease-in-out;
   }
 
   /* When you mouse over the navigation links, change their color */
-  .sidenav .a-sidebar:hover {
+  .sidenav .a-sidebar:hover, .a-sidebar:focus, .a-sidebar:active {
     color: var(--accent-color);
-    font-size: 20px;
+    background-size: 100% 0.2em;
   }
 
   /* Position and style the close button (top right corner) */

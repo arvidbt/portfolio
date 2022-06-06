@@ -1,5 +1,5 @@
 <template>
-  <div class="home">
+  <div class="about-test">
   </div>
 </template>
 
@@ -13,3 +13,11 @@ export default {
   }
 }
 </script>
+
+<style>
+.about-test {
+  width: 100vw;
+  height: 100vh;
+  background: red;
+}
+</style>

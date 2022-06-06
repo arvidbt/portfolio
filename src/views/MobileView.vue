@@ -4,6 +4,7 @@
         <h1>503 :(</h1>
         <h1>503</h1>
         <h2 class="h2-mobile"><br><br>Site is under construction.</h2>
+        <h2  class="h2-mobile">Come back later or the desktop version.</h2>
     </div>
     </div>
 </template>
