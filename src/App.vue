@@ -11,8 +11,6 @@
     <section>
       <section><LandingPage id="aboutMe"/></section>
     </section>
-
-
     <section id="myProjects">
       <section><ProjectsPage/></section>
     </section>
@@ -93,7 +91,7 @@ export default {
 .button-up {
   background-color: var(--accent-color);
   position: fixed;
-  width: 90px; 
+  width: 90px;
   height: 40px;
   display:flex;
   align-items: center;
@@ -127,7 +125,7 @@ export default {
   overflow-x:hidden;
   transition: 0.3s ease-in-out;
   scroll-behavior:smooth;
-  
+
 }
 
 html,body{margin:0;padding:0}

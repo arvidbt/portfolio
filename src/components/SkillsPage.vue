@@ -17,7 +17,8 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: var(--background-color-primary);
+    background: red;
+    z-index: 1000;
     top: 50px;
     width: 100vw;
     height: 100vh;

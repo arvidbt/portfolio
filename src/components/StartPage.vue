@@ -3,15 +3,9 @@
         <h1><span id="greeting">Hello</span> there!</h1>
         <h1><span id="greeting">Hello</span> there!</h1>
         <h2>
-            My name is Arvid <span style="color: var(--accent-color); transition: all 0.3s ease-in-out;">Bergman Thörn</span>
+            My name is Arvid
             and I'm a developer from northern Sweden. <br/> Let me introduce myself!
         </h2>
-        <!-- <div @click="scrollDown('aboutMe')" class="round">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-        </div> -->
                     <div @click="scrollDown('aboutMe')">
             <a><span></span></a>
         </div>
@@ -43,7 +37,7 @@ export default {
     height: 100vh;
     max-width: 100%;
     transition: 0.3s ease-in-out;
-    
+
 }
 
 .introduce {

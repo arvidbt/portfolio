@@ -130,7 +130,7 @@ export default {
 
   .navbar {
     margin: 0;
-    height: 70px;
+    height: 80px;
     width: 100vw;
     max-width: 100%;
     background-color: var(--background-color-primary);;
