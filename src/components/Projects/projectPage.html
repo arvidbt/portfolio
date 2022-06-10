@@ -1,0 +1,30 @@
+
+  <div class="project-intro-container">
+      <h1 class="h1-intro">These are some of the projects that I've worked on.</h1>
+  </div>
+  <div class=project-container>
+      <!-- This websites project slot -->
+      <div class="large-project-container">
+          <img @click="redirect('https://github.com/arvidbt/portfolio')" class="img-left" src="../../assets/images/port.png" title="test"/>
+          <img @click="redirect('https://github.com/arvidbt/PBLogger')" class="img-left" src="../../assets/images/homescreen.png"/>
+      </div>
+  </div>
+  <div class=project-container>
+              <!-- MIRA project slot -->
+      <div class="large-project-container">
+          <img class="img-left" src="../../assets/images/thirty.png"/>
+          <RouterLink to="/skills">
+            <img class="img-left" src="../../assets/images/mira.png"/>
+          </RouterLink>
+      </div>
+                  <div v-if="expanded" class="desc-div"><h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam elementum purus non mattis dictum. Nunc elementum semper felis quis gravida. Pellentesque lacus mauris, aliquam id vulputate sit amet, pharetra nec risus. Cras ac fermentum massa. Praesent eros turpis, consectetur sit amet vehicula quis, tempus in elit. Integer condimentum turpis ac ipsum porttitor dapibus. Etiam ultrices, nisl ac iaculis tincidunt, lectus dui porta est, sed laoreet ex sapien eu ante. Vivamus aliquam maximus cursus. Suspendisse sed purus vehicula, egestas libero nec, luctus erat. Fusce condimentum tempor tortor, sit amet molestie eros mollis quis. Nunc nec pharetra nisl, et tempus eros. Morbi.</h1></div>
+
+  </div>
+   <div class=project-container>
+
+
+      <div class="large-project-container not-clickable-div">
+          <img class="img-left" src="../../assets/images/iceMap.png">
+          <img @click="redirect('https://github.com/arvidbt/2048')" class="img-left" src="../../assets/images/2048.png"/>
+      </div>
+  </div>

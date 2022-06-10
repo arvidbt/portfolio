@@ -1,0 +1,22 @@
+<nav class="navbar" :class="{'navbar--hidden': !showNavBar}">
+  <div class="left-nav-container">
+
+    <div class="menu-btn">
+      <div class="menu-btn__burger"></div>
+    </div>
+
+    <div class="theme-button-container">
+        <ThemeButton/>
+    </div>
+  </div>
+  <!-- here social links be at yeeeboi -->
+  <div class="social-icons-container">
+    <SocialButton link="https://www.linkedin.com/in/arvid-bergman-th%C3%B6rn-1843701b8/" icon="linkedin.svg" iconType="LinkedIn"/>
+    <SocialButton link="https://github.com/arvidbt" icon="github.svg" iconType="GitHub"/>
+    <SocialButton link="https://arvidbt.github.io/resume/" icon="cv.svg" iconType="CV"/>
+  </div>
+
+</nav>
+<div>
+  <SideBar @clicked="onClicked" v-if="menuOpen"/>
+</div>

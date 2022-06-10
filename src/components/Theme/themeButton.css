@@ -1,0 +1,18 @@
+.switch-checkbox {
+  display: none;
+}
+
+.toggle-span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: var(--text-primary-color);
+}
+
+svg {
+  height: 30px;
+}
+
+svg:hover {
+  cursor: pointer;
+}
