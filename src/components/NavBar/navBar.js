@@ -1,6 +1,7 @@
 import SocialButton from '../SocialButton.vue'
 import ThemeButton from '../ThemeButton.vue'
 import SideBar from '../SideBar.vue'
+import HamburgerMenu from '../HamburgerMenu'
 
 export default {
   name: 'NavBar',
@@ -9,6 +10,7 @@ export default {
     SocialButton,
     ThemeButton,
     SideBar,
+    HamburgerMenu
   },
   data () {
     return {

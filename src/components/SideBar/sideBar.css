@@ -52,13 +52,10 @@
   transition: background-size 0.3s ease-in-out;
 }
 
-/* When you mouse over the navigation links, change their color */
 .sidenav .a-sidebar:hover, .a-sidebar:focus, .a-sidebar:active {
-  color: var(--accent-color);
   background-size: 100% 0.2em;
 }
 
-/* Position and style the close button (top right corner) */
 .sidenav .closebtn {
   position: absolute;
   right: 25px;

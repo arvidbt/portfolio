@@ -10,12 +10,6 @@
   transition: 0.3s ease-in-out;
 }
 
-.inner-home-container-left {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: 0.3s ease-in-out;
-}
 
 .theme-button-container {
   display: flex;
@@ -26,13 +20,13 @@
 }
 
 .left-nav-container {
-    background-color: var(--background-color-primary);
-    margin-top: 20px;
-    height: 40px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    transition: 0.3s ease-in-out;
+  background-color: var(--background-color-primary);
+  margin-top: 20px;
+  height: 40px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  transition: 0.3s ease-in-out;
 }
 
 .navbar {
@@ -57,67 +51,7 @@
   transform: translate3d(0, -120%, 0);
 }
 
-.social-icon {
-  height: 40px;
-}
-
 .clickable-div {
   cursor: pointer;
 }
 
-.menu-btn {
-  margin-left: 40px;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 30px;
-  height: 20px;
-  cursor: pointer;
-  transition: all .3s ease-in-out;
-}
-.menu-btn__burger {
-  width: 30px;
-  height: 4px;
-  background: var(--text-primary-color);
-  border-radius: 1px;
-  transition: .3s ease-in-out;
-}
-
-.menu-btn__burger::before {
-  margin-bottom: 5px;
-  content: '';
-  position: absolute;
-  width: 30px;
-  height: 4px;
-  background: var(--text-primary-color);
-  border-radius: 5px;
-  transition: .3s ease-in-out;
-}
-.menu-btn__burger::after {
-  margin-bottom: 5px;
-  content: '';
-  position: absolute;
-  width: 30px;
-  height: 4px;
-  background: var(--text-primary-color);
-  border-radius: 5px;
-  transition: .3s ease-in-out;
-}
-.menu-btn__burger::before {
-  transform: translateY(-16px);
-}
-.menu-btn__burger::after {
-  transform: translateY(16px);
-}
-.menu-btn.open .menu-btn__burger {
-  transform: translateX(-50px);
-  background: transparent;
-  box-shadow: none;
-}
-.menu-btn.open .menu-btn__burger::before {
-  transform: rotate(45deg) translate(35px, -35px);
-}
-.menu-btn.open .menu-btn__burger::after {
-  transform: rotate(-45deg) translate(35px, 35px);
-}

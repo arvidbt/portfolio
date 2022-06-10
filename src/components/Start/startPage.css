@@ -39,9 +39,7 @@ a span:hover {
   border-bottom: 3px solid var(--accent-color);
   width: 26px;
   height: 26px;
-
 }
-
 
 a span:not(hover) {
   transition: 0.2s all ease-in-out;
@@ -63,20 +61,10 @@ a span:not(hover) {
   }
 }
 
-
-
-
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap');
 h1 {  color: var(--text-primary-color); font-family: 'Roboto', sans-serif;    font-size: 62px; font-weight: 800; line-height: 72px; margin: 0 0 24px; text-align: left; }
 
 h2 { animation: fadeIn 3s; color: var(--text-primary-color); font-family: 'Roboto', sans-serif; font-size: 24px; font-weight: 800; line-height: 36px; margin: 0 0 24px; text-align: lfet; }
-
-p { color: var(--text-primary-color); font-family: 'Roboto', sans-serif; font-size: 18px; font-weight: 500; line-height: 32px; margin: 0 0 24px; }
-
-a { color: var(--text-primary-color); text-decoration: underline; }
-
-a:hover { color: #1c1c1c; text-decoration: underline; }
 
 
 .content {
