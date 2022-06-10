@@ -11,6 +11,10 @@
     <section><AboutPage/></section>
   </section>
 
+  <section id="mySkills">
+    <section><SkillsPage/></section>
+  </section>
+
   <section id="myProjects">
     <section><ProjectsPage/></section>
   </section>
@@ -38,23 +42,22 @@
 import StartPage from '../components/StartPage.vue'
 import NavBar from '../components/NavBar.vue'
 import AboutPage from '../components/AboutPage.vue'
-import ExperiencesPage from '../components/SkillsPage.vue'
 import ProjectsPage from '../components/ProjectsPage.vue'
 import GetInTouch from '../components/ContactPage.vue'
 import MobileView from '../views/MobileView.vue'
 import ContactPage from '../components/ContactPage.vue'
+import SkillsPage from '../components/SkillsPage.vue'
 export default {
   name: 'DesktopView',
   components: {
     NavBar,
     AboutPage,
-    ExperiencesPage,
+    SkillsPage,
     StartPage,
     ProjectsPage,
     GetInTouch,
     MobileView,
     ContactPage,
-    ContactPage
   },
   data() {
     return {
