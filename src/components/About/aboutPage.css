@@ -12,6 +12,8 @@
   @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap');
 .profile {
   display: grid;
+  justify-content: center;
+  align-items: center;
   gap: 3rem;
   grid-auto-columns: 1fr;
   grid-template-areas:
@@ -21,14 +23,13 @@
   padding: var(--size-400);
 }
 
+
 .profile__image {
   border-radius: 56% 44% 73% 27% / 45% 68% 32% 55%;
   height: 50vh;
   border: 5px solid var(--background-color-secondary);
   box-shadow: 5px 5px var(--accent-color);
   transition: all 0.3s ease-in-out;
-
-
   grid-area: image;
 }
 

@@ -1,0 +1,133 @@
+* {
+  box-sizing: border-box;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  width: 760px;
+  margin: 0 auto;
+  transition: all 0.3s ease-in-out;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: var(--background-color-secondary);
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Container around content */
+.container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+/* The circles on the timeline */
+.container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: var(--background-color-secondary);
+  border: 4px solid var(--accent-color);
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Place the container to the left */
+.left {
+  left: 0;
+}
+
+/* Place the container to the right */
+.right {
+  left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid var(--background-color-secondary) ;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent var(--background-color-secondary) ;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid var(--background-color-secondary) ;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent var(--background-color-secondary) transparent transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -16px;
+}
+
+/* The actual content */
+.content-timeline {
+  padding: 10px 30px;
+  background-color: var(--background-color-secondary);
+  position: relative;
+  border-radius: 6px;
+  width: 300px;
+  height: 140px;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  border: 5px solid var(--background-color-secondary);
+  box-shadow: 5px 5px var(--accent-color);
+}
+
+.content-timeline:hover {
+  height: fit-content;
+}
+
+@media screen and (max-width: 600px) {
+  .timeline::after {
+    left: 31px;
+  }
+  .container {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+  .container::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+  .left::after, .right::after {
+    left: 15px;
+  }
+  .right {
+    left: 0%;
+  }
+}

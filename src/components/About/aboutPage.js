@@ -1,8 +1,7 @@
+import TimeLine from '../TimeLine.vue'
 export default {
-  name: 'LandingPage',
-  methods: {
-    linkToCourse(link) {
-      window.open(link, 'mywindow')
-    }
-  }
+  name: 'aboutPage',
+  components: {
+    TimeLine,
+  },
 }

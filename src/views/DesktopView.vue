@@ -67,7 +67,6 @@ export default {
     },
 
     show(value) {
-      console.log(value)
         this.showButton = value
     },
     scrollUp() {
