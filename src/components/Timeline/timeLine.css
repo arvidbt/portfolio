@@ -95,18 +95,32 @@
 .content-timeline {
   padding: 10px 30px;
   background-color: var(--background-color-secondary);
+  transition: all 0.3s ease-in-out;
   position: relative;
   border-radius: 6px;
   width: 300px;
   height: 140px;
   overflow: hidden;
-  transition: all 0.3s ease-in-out;
   border: 5px solid var(--background-color-secondary);
   box-shadow: 5px 5px var(--accent-color);
 }
 
 .content-timeline:hover {
   height: fit-content;
+}
+
+a span {
+  position: absolute;
+  bottom: 200px;
+  left: 50%;
+  width: 24px;
+  height: 24px;
+  margin-left: -12px;
+  border-left: 3px solid var(--text-primary-color);
+  border-bottom: 3px solid var(--text-primary-color);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  box-sizing: border-box;
 }
 
 @media screen and (max-width: 600px) {

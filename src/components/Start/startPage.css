@@ -86,7 +86,7 @@ color: transparent;
 
 .content h1:nth-child(2) {
 color: var(--text-primary-color);
-animation: animate 15s ease-in-out infinite;
+animation: animate 5s ease-in-out infinite;
 }
 
 @keyframes animate {

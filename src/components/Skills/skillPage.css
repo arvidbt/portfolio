@@ -21,6 +21,7 @@
   border-radius: 10px;
   border: 5px solid var(--background-color-secondary);
   box-shadow: 5px 5px var(--accent-color);
+  transition: all 0.3s ease-in-out;
 }
 
 .h1-skills {
@@ -32,16 +33,18 @@
 .skill-image {
   height: 60px;
   width: 60px;
+  transition: opacity 0.3s linear;
 }
 
 .skill-image-placeholder {
   height: 60px;
   width: 60px;
   background: var(--background-color-secondary);
+  transition: all 0.3s ease-in-out;
 }
 
 .skill-wrapper {
-  height: 100vh;
+  height: 85vh;
   width: 100%;
 }
 
@@ -54,4 +57,21 @@
   align-items: center;
   text-align: left;
   transition: 0.3s all ease-in-out;
+}
+
+.button-div {
+  background-color: var(--background-color-secondary);
+  color: var(--text-primary-color);
+  width: 10rem;
+  height: 4rem;
+  display:flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border: 5px solid var(--background-color-secondary);
+  border-radius: 5px;
+  box-shadow: 5px 5px var(--accent-color);
+  margin-bottom: 20px;
+  margin-right: 20px;
+  transition: 0.3s all ease-in-out;
+  cursor: pointer;
 }
