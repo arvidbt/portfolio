@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap');
 .aboutme-page-container {
   display: flex;
   justify-content: center;
@@ -12,6 +13,7 @@
 .aboutme-page-wrapper {
   width: 100%;
   height: 100%;
+  min-height: fit-content;
 }
 
 .image-container {
@@ -28,6 +30,7 @@
 .timeline-container {
   width: 50%;
   height: 100%;
+  max-height: fit-content;
   background-color: var(--background-color-primary);
   float: left;
   display: flex;
@@ -36,8 +39,6 @@
   transition: 0.3s all ease-in-out;
 }
 
-  @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap');
-
 
 .profile__image {
   border-radius: 56% 44% 73% 27% / 45% 68% 32% 55%;
@@ -45,7 +46,6 @@
   border: 5px solid var(--background-color-secondary);
   box-shadow: 5px 5px var(--accent-color);
   transition: all 0.3s ease-in-out;
-  grid-area: image;
 }
 
 .profile__description {
@@ -54,4 +54,12 @@
   transition: all 0.3s ease-in-out;
 }
 
-.h2-title { margin-top: 20px; margin-left: 20px; margin-right: 20px; color: var(--text-primary-color); font-family: 'Roboto', sans-serif; font-size: 28px; font-weight: 800; line-height: 36px; text-align: lfet; font-style: bold;}
+@media screen and (max-height: 480px) {
+  .profile__image {
+    border-radius: 56% 44% 73% 27% / 45% 68% 32% 55%;
+    height: 50vh;
+    border: 5px solid red;
+    box-shadow: 5px 5px var(--accent-color);
+    transition: all 0.3s ease-in-out;
+  }
+}

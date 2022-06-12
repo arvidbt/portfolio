@@ -123,7 +123,13 @@ a span {
   box-sizing: border-box;
 }
 
-@media screen and (max-width: 600px) {
+.profile__description {
+  color: var(--text-primary-color);
+  font-family: 'Roboto', sans-serif;
+  transition: all 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 480px) {
   .timeline::after {
     left: 31px;
   }
@@ -134,14 +140,33 @@ a span {
   }
   .container::before {
     left: 60px;
-    border: medium solid white;
+    border: medium solid var(--background-color-secondary);
     border-width: 10px 10px 10px 0;
-    border-color: transparent white transparent transparent;
+    border-color: transparent var(--background-color-secondary) transparent transparent;
   }
   .left::after, .right::after {
     left: 15px;
   }
   .right {
     left: 0%;
+  }
+  
+  .profile__description {
+    color: var(--text-primary-color);
+    font-family: 'Roboto', sans-serif;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .content-timeline {
+    padding: 10px 30px;
+    background-color: var(--background-color-secondary);
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    border-radius: 6px;
+    width: 280px;
+    height: 140px;
+    overflow: hidden;
+    border: 5px solid var(--background-color-secondary);
+    box-shadow: 5px 5px var(--accent-color);
   }
 }

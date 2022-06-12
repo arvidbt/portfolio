@@ -26,6 +26,7 @@ export default {
     },
 
     onScroll () {
+      if(this.$isMobile()) { return }
       const currentScrollPosition = window.pageYOffset || document.documentElement.scrollTop
       if (currentScrollPosition < 0) { return }
       if (Math.abs(currentScrollPosition - this.lastScrollPosition) < 30) { return }
@@ -38,16 +39,18 @@ export default {
   },
   mounted () {
       window.addEventListener('scroll', this.onScroll)
-      this.menuBtn = document.querySelector('.menu-btn')
-      this.menuBtn.addEventListener('click', () => {
-        if (!this.menuOpen) {
-          this.menuBtn.classList.add('open')
-          this.menuOpen = true
-        } else {
-          this.menuBtn.classList.remove('open')
-          this.menuOpen = false
-        }
-      })
+      if(!this.$isMobile()) {
+        this.menuBtn = document.querySelector('.menu-btn')
+        this.menuBtn.addEventListener('click', () => {
+          if (!this.menuOpen) {
+            this.menuBtn.classList.add('open')
+            this.menuOpen = true
+          } else {
+            this.menuBtn.classList.remove('open')
+            this.menuOpen = false
+          }
+        })
+      }
   },
   beforeUnmount () {
     window.removeEventListener('scroll', this.onScroll)

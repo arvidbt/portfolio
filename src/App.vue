@@ -1,5 +1,5 @@
 <template>
-<div class="body-html" v-if="true">
+<div class="body-html" v-if="!$isMobile()">
     <DesktopView/>
 </div>
 <div v-else>

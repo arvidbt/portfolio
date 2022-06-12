@@ -1,7 +1,9 @@
 <nav class="navbar" :class="{'navbar--hidden': !showNavBar}">
   <div class="left-nav-container">
     
-    <HamburgerMenu/>
+    <div v-if="!$isMobile()">
+      <HamburgerMenu/>
+    </div>
 
     <div class="theme-button-container">
         <ThemeButton/>
@@ -13,8 +15,7 @@
     <SocialButton link="https://github.com/arvidbt" icon="github.svg" iconType="GitHub"/>
     <SocialButton link="https://arvidbt.github.io/resume/" icon="cv.svg" iconType="CV"/>
   </div>
-
 </nav>
-<div>
+<div  v-if="!$isMobile()">
   <SideBar @clicked="onClicked" v-if="menuOpen"/>
 </div>

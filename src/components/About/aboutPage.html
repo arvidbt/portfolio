@@ -2,7 +2,8 @@
   <div class="image-container">
     <img src="../../assets/images/tobig.jpeg" alt="" class="profile__image">
   </div>
-  <div class="timeline-container">
+  <div v-if="!$isMobile()" class="timeline-container">
     <TimeLine class="profile__description"/>
   </div>
+  
 </div>

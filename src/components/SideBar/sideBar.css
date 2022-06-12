@@ -64,11 +64,23 @@
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-  .sidenav {
-    padding-top: 15px;
-  }
+@media screen and (max-height: 480px) {
   .sidenav .a-sidebar {
     font-size: 18px;
   }
+
+  .sidenav {
+    height: 100%;
+    margin-top: 70px;
+    width: 300px;
+    position: fixed;
+    transition: 0.3s ease-in-out;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background: red;
+    overflow-x: hidden;
+    padding-top: 60px;
+  }
+
 }
