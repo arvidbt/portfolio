@@ -1,28 +1,59 @@
 
   <div class="project-intro-container">
-      <h1 class="h1-intro">These are some of the projects that I've worked on.</h1>
+    <h1 class="h1-intro">These are some of the projects that I've worked on.</h1>
   </div>
   <div class=project-container>
-      <!-- This websites project slot -->
-      <div class="large-project-container">
-          <img @click="redirect('https://github.com/arvidbt/portfolio')" class="img-left" src="../../assets/images/port.png" title="test"/>
-          <img @click="redirect('https://github.com/arvidbt/PBLogger')" class="img-left" src="../../assets/images/homescreen.png"/>
-      </div>
+    <div class="large-project-container">
+      <img class="img-left" @click="expand('portfolio')" src="../../assets/images/port.png"/>
+      <img class="img-left" @click="expand('PBLogger')" src="../../assets/images/homescreen.png"/>
+    </div>
+  </div>
+  <div class="desc-div-container">
+    <div v-if="portfolio" class="desc-div">
+      <h1 class="h1-intro">This portfolio</h1>
+      <h1>PBLogger is a Android training app, used to log PB's.</h1> 
+      <h3>Tools used: Figma, Android Studio, Kotlin</h3>
+    </div>
+  </div>
+  <div class="desc-div-container">
+    <div v-if="PBLogger" class="desc-div">
+      <h1 class="h1-intro">PBLogger</h1>
+      <h1>PBLogger is a Android training app, used to log PB's.</h1>
+      <br>
+      The application was created during the course Application Development for Android, where the goal was to create an app that utilized one of the phones sensors.<br>
+      In my case, I chose to built the application around the camera.
+      <h3>Tools used: Figma, Android Studio, Kotlin</h3>
+      <svg class="github-link" viewBox="0 0 1024 1024" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" clip-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8C0 11.54 2.29 14.53 5.47 15.59C5.87 15.66 6.02 15.42 6.02 15.21C6.02 15.02 6.01 14.39 6.01 13.72C4 14.09 3.48 13.23 3.32 12.78C3.23 12.55 2.84 11.84 2.5 11.65C2.22 11.5 1.82 11.13 2.49 11.12C3.12 11.11 3.57 11.7 3.72 11.94C4.44 13.15 5.59 12.81 6.05 12.6C6.12 12.08 6.33 11.73 6.56 11.53C4.78 11.33 2.92 10.64 2.92 7.58C2.92 6.71 3.23 5.99 3.74 5.43C3.66 5.23 3.38 4.41 3.82 3.31C3.82 3.31 4.49 3.1 6.02 4.13C6.66 3.95 7.34 3.86 8.02 3.86C8.7 3.86 9.38 3.95 10.02 4.13C11.55 3.09 12.22 3.31 12.22 3.31C12.66 4.41 12.38 5.23 12.3 5.43C12.81 5.99 13.12 6.7 13.12 7.58C13.12 10.65 11.25 11.33 9.47 11.53C9.76 11.78 10.01 12.26 10.01 13.01C10.01 14.08 10 14.94 10 15.21C10 15.42 10.15 15.67 10.55 15.59C13.71 14.53 16 11.53 16 8C16 3.58 12.42 0 8 0Z" transform="scale(64)"/></svg>
+    
+    </div>
   </div>
   <div class=project-container>
-              <!-- MIRA project slot -->
-      <div class="large-project-container">
-          <img class="img-left" src="../../assets/images/thirty.png"/>
-          <RouterLink to="/skills">
-            <img class="img-left" src="../../assets/images/mira.png"/>
-          </RouterLink>
-      </div>
-                  <div v-if="expanded" class="desc-div"><h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam elementum purus non mattis dictum. Nunc elementum semper felis quis gravida. Pellentesque lacus mauris, aliquam id vulputate sit amet, pharetra nec risus. Cras ac fermentum massa. Praesent eros turpis, consectetur sit amet vehicula quis, tempus in elit. Integer condimentum turpis ac ipsum porttitor dapibus. Etiam ultrices, nisl ac iaculis tincidunt, lectus dui porta est, sed laoreet ex sapien eu ante. Vivamus aliquam maximus cursus. Suspendisse sed purus vehicula, egestas libero nec, luctus erat. Fusce condimentum tempor tortor, sit amet molestie eros mollis quis. Nunc nec pharetra nisl, et tempus eros. Morbi.</h1></div>
-
+    <div class="large-project-container">
+      <img class="img-left" @click="expand('thirty')" src="../../assets/images/thirty.png"/>
+      <img class="img-left" @click="expand('mira')" src="../../assets/images/mira.png"/>
+    </div>
+  </div>
+  <div class="desc-div-container">
+    <div v-if="mira && !thirty" class="desc-div"><h1>{{ miraExpanded() }}</h1></div>
+  </div>
+  <div class="desc-div-container">
+    <div v-if="thirty && !mira" class="desc-div"><h1>{{ thirtyExpanded() }}</h1></div>
   </div>
    <div class=project-container>
-      <div class="large-project-container not-clickable-div">
-          <img class="img-left" src="../../assets/images/iceMap.png">
-          <img @click="redirect('https://github.com/arvidbt/2048')" class="img-left" src="../../assets/images/2048.png"/>
-      </div>
+    <div class="large-project-container not-clickable-div">
+      <img class="img-left" @click="expand('antiTD')" src="../../assets/images/iceMap.png">
+      <img  class="img-left" @click="expand('twenty48')" src="../../assets/images/2048.png"/>
+    </div>
   </div>
+  <div class="desc-div-container">
+    <div v-if="antiTD && !twenty48" class="desc-div"><h1>{{ antiTDExpanded() }}</h1></div>
+  </div>
+  <div class="desc-div-container">
+    <div v-if="twenty48 && !antiTD" class="desc-div"><h1>{{ twenty48Expanded() }}</h1></div>
+  </div>
+
+  <!-- 
+@click="redirect('https://github.com/arvidbt/portfolio')"
+@click="redirect('https://github.com/arvidbt/PBLogger')"
+@click="redirect('https://github.com/arvidbt/2048')" 
+   -->

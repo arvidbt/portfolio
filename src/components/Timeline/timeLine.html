@@ -9,7 +9,7 @@
   </div>
   <div class="container left">
     <div class="content-timeline profile__description" :style="[{'height' : !is2019Open ? '8.5rem' : '22rem'}]" @click="foldOut(2019)">
-      <h2>2019 <img style="float: right; height: 20px; width: 20px;" :src="!is2019Open ? 'https://img.icons8.com/ios-filled/50/undefined/expand-arrow--v1.png' : 'https://img.icons8.com/ios-filled/50/undefined/collapse-arrow.png'"/></h2>
+      <h2>2019 <img style="float: right; height: 20px; width: 20px; " :src="!is2019Open ? 'https://img.icons8.com/ios-filled/50/undefined/expand-arrow--v1.png' : 'https://img.icons8.com/ios-filled/50/undefined/collapse-arrow.png'"/></h2>
       <p>Started studying math and physics at the university.</p>
 
       After some time working at IKEA and Martin & Servera driving forklifts, I was ready for some new challenges.
@@ -47,7 +47,7 @@
 
       During the early spring / late winter, I contacted Acino, a local IT-consultant firm, and was offered to become a student ambassador for them.
       My job was basically being a link between Acino and students, and organizing code-nights, where students could come and talk and learn about programming.<br><br>
-      This eventually led to my first job within the field. During the summer of 2022, I work as a software developer for Acino AB.
+      This eventually led to my first job within the field. During the summer of 2022, I work as a software developer for <span style="cursor: pointer" @click="linkToCourse('https://acino.se/')">Acino AB.</span>
     </div>
   </div>
 </div>

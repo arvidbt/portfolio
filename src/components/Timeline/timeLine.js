@@ -19,6 +19,6 @@ export default {
       else if(year == '2020') { this.is2020Open = !this.is2020Open }
       else if(year == '2021') { this.is2021Open = !this.is2021Open }
       else if(year == '2022') { this.is2022Open = !this.is2022Open }
-    }
+    },
   }
 }

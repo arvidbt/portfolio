@@ -15,7 +15,8 @@
   justify-content: center;
   align-items: center;
   gap: 10px 70px;
-  width: 100vh;
+  width: 65vw;
+  min-width: fit-content;
   height: 50vh;
   background: var(--background-color-secondary);
   border-radius: 10px;
@@ -34,6 +35,32 @@
   height: 60px;
   width: 60px;
   transition: opacity 0.3s linear;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: var(--background-color-primary);
+  color: var(--text-primary-color);
+  font-family: 'Roboto', sans-serif;
+
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+  width: 120px;
+  top: 100%;
+  left: 50%;
+  margin-left: -60px;
+}
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
 }
 
 .skill-image-placeholder {
@@ -67,11 +94,14 @@
   display:flex;
   align-items: center;
   justify-content: space-evenly;
-  border: 5px solid var(--background-color-secondary);
   border-radius: 5px;
-  box-shadow: 5px 5px var(--accent-color);
   margin-bottom: 20px;
   margin-right: 20px;
   transition: 0.3s all ease-in-out;
   cursor: pointer;
+}
+
+.button-div-border {
+  box-shadow: 5px 5px var(--accent-color);
+  border: 5px solid var(--background-color-secondary);
 }

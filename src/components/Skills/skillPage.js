@@ -1,4 +1,3 @@
-import { toHandlers } from "vue";
 
 export default {
   name: 'skillPage',

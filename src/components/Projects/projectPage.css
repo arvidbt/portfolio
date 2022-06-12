@@ -53,3 +53,23 @@
     transition: 0.3s all ease-in-out;
     box-shadow: 5px 5px var(--accent-color);
 }
+
+.desc-div {
+    background-color: var(--background-color-secondary);
+    border-radius: 10px;
+    min-height: fit-content;
+    max-width: 60vw;
+    padding: 20px;
+}
+
+.desc-div-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-primary-color)
+}
+
+.github-link {
+    float: right;
+}

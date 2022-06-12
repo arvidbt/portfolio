@@ -36,7 +36,6 @@ export default {
   scroll-behavior:smooth;
 }
 
-html,body{margin:0;padding:0}
 
 
 

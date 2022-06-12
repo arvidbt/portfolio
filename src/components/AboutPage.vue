@@ -6,6 +6,4 @@
 </script>
 
 <style src="./About/aboutPage.css">
-
-
 </style>

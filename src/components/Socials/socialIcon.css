@@ -3,12 +3,12 @@ svg path {
 }
 
 .social-icon:hover {
-height: 30px;
-transition: 0.2s all ease-in-out;
+height: 50px;
+transition: 0.3s all ease-in-out;
 }
 
 .social-icon:not(hover) {
-transition: 0.2s all ease-in-out;
+transition: 0.3s all ease-in-out;
 }
 
 .social-icon {
