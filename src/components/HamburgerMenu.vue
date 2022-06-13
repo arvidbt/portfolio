@@ -1,11 +1,11 @@
-<template src="./Menu/menu.html">
+<template src="./Menu/hamburgerMenu.html">
 
 </template>
 
-<script src="./Menu/menu.js">
+<script src="./Menu/hamburgerMenu.js">
 
 </script>
 
-<style src="./Menu/menu.css">
+<style src="./Menu/hamburgerMenu.css">
 
 </style>

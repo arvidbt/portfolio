@@ -32,14 +32,12 @@
 }
 
 .skill-image {
-  height: 60px;
   width: 60px;
   transition: opacity 0.3s linear;
 }
 
 .tooltip .tooltiptext {
   visibility: hidden;
-  width: 120px;
   background-color: var(--background-color-primary);
   color: var(--text-primary-color);
   font-family: 'Roboto', sans-serif;
