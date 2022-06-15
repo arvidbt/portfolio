@@ -21,12 +21,12 @@ export default {
             _48: "2048",
           },
           desc: {
-            PT: "Made this portfolio as a way of practicing web development. Focus was learning the Vue framework.",
-            PB: "PBLogger is an Android mobile application, used for training and logging training records.",
-            TH: "Thirty is a Android mobile game, similar to Yatzy.",
-            TD: "AntiTD is a project made in Java with 3 other students. It's a twist to the classic TD games, where you reverse the roles of attacker.",
-            MR: "Mira is a CRUD site I made with my friend Tomas Diaz. Purpose was learning to create a REST-api.",
-            _48: "2048 is not the most pretty nor bugfree program out there, but it's my first project and has a special place in my heart.",
+            PT: "A Vue 3.0 website deployed on Netlify.",
+            PB: "Android mobile training application. Record your PBs!",
+            TH: "Android mobile dice game. Play Yatzy, with a twist.",
+            TD: "Anti-tower defence. Play as the attacker!",
+            MR: "CRUD website utilizing a REST-api built with Axios.",
+            _48: "My first ever solo project!",
           },
           tools: {
             PT: "Tools used: Vue.JS, CSS3, HTML5, Netlify",

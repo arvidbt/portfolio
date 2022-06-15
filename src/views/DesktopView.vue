@@ -19,6 +19,9 @@
     <section><ProjectsPage/></section>
   </section>
 
+  <section id="getInTouch">
+    <section><PageFooter/></section>
+  </section>
   <button v-if="!showButton" class="button-up cssanimation sequence fadeInBottom" @click="scrollUp()">
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -47,6 +50,7 @@ import GetInTouch from '../components/ContactPage.vue'
 import MobileView from '../views/MobileView.vue'
 import ContactPage from '../components/ContactPage.vue'
 import SkillsPage from '../components/SkillsPage.vue'
+import PageFooter from '../components/PageFooter.vue'
 export default {
   name: 'DesktopView',
   components: {
@@ -58,6 +62,7 @@ export default {
     GetInTouch,
     MobileView,
     ContactPage,
+    PageFooter,
   },
   data() {
     return {

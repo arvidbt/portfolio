@@ -15,7 +15,8 @@
   justify-content: center;
   align-items: center;
   gap: 10px 70px;
-  width: 65vw;
+  width: auto;
+  padding: 50px;
   min-width: fit-content;
   height: 50vh;
   background: var(--background-color-secondary);
