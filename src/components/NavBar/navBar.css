@@ -55,6 +55,18 @@
   cursor: pointer;
 }
 
+.h1-nav {
+  padding: 10px;
+  font-weight: bold;
+  font-size: 18px;
+  color: var(--text-primary-color);
+  font-family: 'Roboto', sans-serif;
+}
+
+.h1-nav:hover {
+  cursor: pointer;
+}
+
 
 @media screen and (max-width: 480px) {
   .navbar {

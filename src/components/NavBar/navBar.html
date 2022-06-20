@@ -2,11 +2,15 @@
   <div class="left-nav-container">
     
     <div v-if="!$isMobile()">
-      <HamburgerMenu/>
+      <!-- <HamburgerMenu/> -->
     </div>
 
     <div class="theme-button-container">
         <ThemeButton/>
+        <h1 class="h1-nav" style="margin-left: 20px;" @click="onClicked('aboutMe')">About</h1>
+        <h1 class="h1-nav" @click="onClicked('mySkills')">Skills</h1>
+        <h1 class="h1-nav" @click="onClicked('myProjects')">Projects</h1>
+        <h1 class="h1-nav" @click="onClicked('getInTouch')">Contact</h1>
     </div>
   </div>
   <!-- here social links be at yeeeboi -->

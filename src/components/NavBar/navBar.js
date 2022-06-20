@@ -21,8 +21,8 @@ export default {
     }
   },
   methods: {
-    onClicked(AboutMe) {
-      this.$emit('clicked', AboutMe)
+    onClicked(value) {
+      this.$emit('clicked', value)
     },
 
     onScroll () {
@@ -32,25 +32,11 @@ export default {
       if (Math.abs(currentScrollPosition - this.lastScrollPosition) < 30) { return }
       this.showNavBar = currentScrollPosition < this.lastScrollPosition
       this.lastScrollPosition = currentScrollPosition
-      this.menuOpen = false
-      this.menuBtn.classList.remove('open')
       this.$emit('showFab', this.showNavBar)
     }
   },
   mounted () {
       window.addEventListener('scroll', this.onScroll)
-      if(!this.$isMobile()) {
-        this.menuBtn = document.querySelector('.menu-btn')
-        this.menuBtn.addEventListener('click', () => {
-          if (!this.menuOpen) {
-            this.menuBtn.classList.add('open')
-            this.menuOpen = true
-          } else {
-            this.menuBtn.classList.remove('open')
-            this.menuOpen = false
-          }
-        })
-      }
   },
   beforeUnmount () {
     window.removeEventListener('scroll', this.onScroll)

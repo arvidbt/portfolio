@@ -126,6 +126,7 @@ export default {
         }
       },
       getString(comparable, title_1, title_2) {
+        console.log(comparable)
         return  comparable ?
         title_1
         :

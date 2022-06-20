@@ -1,6 +1,6 @@
 <div class="skill-wrapper">
-    <div class="skills-intro-container">
-      <h1 class="h1-intro">Here is some of my skills!</h1>
+    <div class="skills-intro-container" style="margin-top: 200px;">
+      <h1 class="h1-intro">I know stuff.</h1>
     </div>
     <div class="skills-intro-container">
       <div class="button-div" :style="[{
@@ -25,7 +25,6 @@
     </div>
     <div class="skills-container">
     <div class="icon-container">
-      <h1 class="h1-skills">Proficent</h1>
 
       <div class="tooltip">
         <img class="skill-image" :style="[{'opacity' : isHighlighted(backend) ? '1' : '0.1'}]" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg"/> 
@@ -62,12 +61,10 @@
         <img class="skill-image" :style="[{'opacity' : isHighlighted(system) ? '1' : '0.1'}]" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" />
         <span v-if="isHighlighted(system)" class="tooltiptext">UNIX</span>
       </div>
-      <h1 class="h1-skills">Intermediate</h1>
       <div class="tooltip">
         <img class="skill-image" :style="[{'opacity' : isHighlighted(backend) ? '1' : '0.1'}]" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg" />
         <span v-if="isHighlighted(backend)" class="tooltiptext">MySQL</span>
       </div>
-    
       <div class="tooltip">
         <img class="skill-image" :style="[{'opacity' : isHighlighted(backend) ? '1' : '0.1'}]" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg" />
         <span v-if="isHighlighted(backend)" class="tooltiptext">SQLite</span>
@@ -92,10 +89,7 @@
         <img class="skill-image" :style="[{'opacity' : isHighlighted(frontend) ? '1' : '0.1'}]" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
         <span v-if="isHighlighted(frontend)" class="tooltiptext">HTML5</span>
       </div>
-
-      <div class="skill-image-placeholder"></div>
-      <h1 class="h1-skills">Novice</h1>
-            <div class="tooltip">
+      <div class="tooltip">
         <img class="skill-image" :style="[{'opacity' : isHighlighted(backend) ? '1' : '0.1'}]" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"/>
         <span v-if="isHighlighted(backend)" class="tooltiptext">Express</span>
       </div>
@@ -119,11 +113,6 @@
         <img class="skill-image" :style="[{'opacity' : isHighlighted(frontend) ? '1' : '0.1'}]" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"/>
         <span v-if="isHighlighted(frontend)" class="tooltiptext">CSS3</span>
       </div>
-      <div class="tooltip">
-        <div class="skill-image-placeholder"></div>
-
-      </div>
-      <div class="skill-image-placeholder"></div>
     </div>
   </div>
 </div>
